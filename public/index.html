@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Darrod Tennis Academy</title>
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=./es/" />
+    <link rel="canonical" href="https://balearstudio.github.io/darrodtennis/es/" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #14170f;
+        color: #f4f2ea;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .wrap {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        color: #c4703f;
+      }
+    </style>
+    <script>
+      // Send English browsers to /en, everyone else to /es. Preserves ?query#hash.
+      (function () {
+        var lang =
+          (navigator.language || "es").toLowerCase().indexOf("en") === 0
+            ? "en"
+            : "es";
+        location.replace("./" + lang + "/" + location.search + location.hash);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <p>Redirigiendo a <a href="./es/">Darrod Tennis Academy</a>…</p>
+    </div>
+  </body>
+</html>

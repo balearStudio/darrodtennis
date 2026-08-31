@@ -1,0 +1,457 @@
+{
+  "common": {
+    "localeName": "English",
+    "otherLocaleName": "Español",
+    "skipToContent": "Skip to content",
+    "langToggleLabel": "Change language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "backToHome": "Back home",
+    "email": "info@darrodtennisacademy.com",
+    "instagram": "Instagram",
+    "instagramUrl": "https://www.instagram.com/darrodtennisacademy/",
+    "whatsapp": "WhatsApp",
+    "phone": "Phone",
+    "location": "Maspalomas, Gran Canaria",
+    "perHour": "/ hour"
+  },
+  "meta": {
+    "siteName": "Darrod Tennis Academy",
+    "home": {
+      "title": "Darrod Tennis Academy — Tennis and padel in Maspalomas, Gran Canaria",
+      "description": "A tennis and padel academy in Maspalomas for every age and level. Our own methodology, coaches with international experience, and lessons 365 days a year."
+    },
+    "programas": {
+      "title": "Programmes",
+      "description": "Junior Tennis, Tennis Pro and tournament coaching. Three paths, one methodology, for every age and every level."
+    },
+    "equipo": {
+      "title": "Team",
+      "description": "Five certified coaches with international experience, working to one methodology designed by the academy."
+    },
+    "reservar": {
+      "title": "Book a lesson",
+      "description": "Choose your time and we assign the coach. One calendar for the whole academy, confirmed within 24 hours."
+    },
+    "gracias": {
+      "title": "Request received",
+      "description": "We have received your lesson request."
+    },
+    "torneos": {
+      "title": "Tournaments",
+      "description": "Gran Canaria hosts more than nine international tournaments each season. We support our players across the local, national and international calendar."
+    },
+    "hoteles": {
+      "title": "In-hotel service",
+      "description": "Train wherever you are. Coaching at hotels in Maspalomas, for an additional fee."
+    },
+    "precios": {
+      "title": "Pricing",
+      "description": "Rates per lesson hour: from €60 for one player to €120 for four. The price is shared across the group."
+    },
+    "contacto": {
+      "title": "Contact",
+      "description": "Maspalomas, Gran Canaria. Get in touch to start training with us."
+    },
+    "avisoLegal": { "title": "Legal notice", "description": "Legal information for Darrod Tennis Academy." },
+    "privacidad": { "title": "Privacy policy", "description": "How we handle your personal data." },
+    "cookies": { "title": "Cookie policy", "description": "Use of cookies on this website." }
+  },
+  "nav": {
+    "academy": "Academy",
+    "programs": "Programmes",
+    "team": "Team",
+    "tournaments": "Tournaments",
+    "contact": "Contact",
+    "cta": "Book a lesson"
+  },
+  "hero": {
+    "eyebrow": "Maspalomas · Gran Canaria",
+    "titleLine1": "Tennis 365 days a year,",
+    "titleAccent": "in the best climate in the world.",
+    "body": "A tennis and padel academy for every age and level. Our own methodology, coaches with international experience, and personal attention in every session.",
+    "cta1": "Book a lesson",
+    "cta2": "See programmes",
+    "stats": [
+      { "value": "4", "label": "Courts · clay and hard" },
+      { "value": "5", "label": "Certified coaches" },
+      { "value": "9+", "label": "International tournaments" },
+      { "value": "from €60", "label": "Private lesson / hour" }
+    ]
+  },
+  "phil": {
+    "eyebrow": "Our philosophy",
+    "title": "One methodology, five coaches, a plan for every player.",
+    "body": "Every Darrod coach works to the same methodology, designed exclusively by the academy. Players train with several coaches during their development: each professional brings something personal to the process and enriches the player's game.",
+    "principles": [
+      {
+        "title": "A personal approach",
+        "body": "Small groups by age and level. Individual attention guaranteed even in group sessions."
+      },
+      {
+        "title": "Video analysis",
+        "body": "Biomechanical study and game patterns, used to design the best plan for technical improvement."
+      },
+      {
+        "title": "A competitive environment",
+        "body": "Intensive training that builds a winning mentality, on court and beyond it."
+      }
+    ]
+  },
+  "prog": {
+    "eyebrow": "Programmes",
+    "title": "For every age and every level.",
+    "body": "Three paths, one methodology. Choose your starting point and we build the route.",
+    "link": "View programme",
+    "classTypesLabel": "Class types",
+    "classTypes": [
+      "Private tennis",
+      "Group tennis",
+      "Private padel",
+      "Group padel",
+      "Holiday adult groups"
+    ],
+    "fromLabel": "From",
+    "fromPrice": "€60",
+    "items": {
+      "junior": {
+        "index": "01",
+        "tag": "6 – 18 years",
+        "name": "Junior Tennis",
+        "summary": "Technique and footwork fundamentals. Biomechanical study of each player and first steps into competition."
+      },
+      "pro": {
+        "index": "02",
+        "tag": "Competition",
+        "name": "Tennis Pro",
+        "summary": "Every variation of spin, match strategy and game patterns. Psychology and physical preparation adapted to each player."
+      },
+      "coaching": {
+        "index": "03",
+        "tag": "Tournaments",
+        "name": "Coaching & Advice",
+        "summary": "Support at local, national and international tournaments, with a plan agreed between player and family."
+      }
+    }
+  },
+  "players": {
+    "eyebrow": "Track record",
+    "title": "Players we've supported in competition.",
+    "body": "Darrod's coaching and advice programme has worked with players on the international circuit, from development age groups to the professional tour.",
+    "cta": "See the coaching programme",
+    "note": "Best ranking reached during the work together.",
+    "list": [
+      {
+        "name": "Yibing Wu",
+        "stat": "ATP 58",
+        "note": "Junior world No. 1. Champion at the 2023 Dallas ATP 250."
+      },
+      {
+        "name": "Virginia Peña",
+        "stat": "World No. 1",
+        "note": "Under-8, under-10 and under-12 age groups."
+      },
+      { "name": "Yecong He", "stat": "ATP 492" },
+      { "name": "Hugo Largo", "stat": "ATP 1008" },
+      { "name": "Iván Marrero", "stat": "ATP 1191" }
+    ]
+  },
+  "team": {
+    "eyebrow": "Our team",
+    "title": "Coaches with international experience.",
+    "cta": "Meet the team",
+    "collabLabel": "In partnership with",
+    "portraitPending": "Portrait pending",
+    "coaches": {
+      "daniel-rodriguez": { "name": "Daniel Rodríguez", "role": "Director · Head Coach" },
+      "daniel-gonzalez": { "name": "Daniel González", "role": "Coach · Competition" },
+      "laurent-dairiam": { "name": "Laurent Dairiam", "role": "Coach · Tennis Pro" },
+      "javier-anibal": { "name": "Javier Aníbal", "role": "Coach · Junior" },
+      "alberto-ottchota": { "name": "Alberto Ottchota", "role": "Coach · Padel" }
+    }
+  },
+  "book": {
+    "eyebrow": "Booking",
+    "title": "Choose your time. We assign the coach.",
+    "body": "A single calendar for the whole academy. Request the slot that suits you and we confirm within 24 hours with the right coach for your level.",
+    "steps": [
+      {
+        "title": "Request a slot",
+        "body": "Day, time and number of players in the academy calendar."
+      },
+      {
+        "title": "We check availability",
+        "body": "We match your request against coach and court calendars."
+      },
+      {
+        "title": "Confirmation",
+        "body": "You get an email with the assigned coach, court and meeting point."
+      }
+    ],
+    "widget": {
+      "label": "Online booking",
+      "requiresConfirmation": "Requires confirmation",
+      "step1Title": "1 · Lesson type",
+      "step2Title": "2 · Players",
+      "step3Title": "3 · Day and time",
+      "playersOne": "player",
+      "playersOther": "players",
+      "duration": "{minutes} min",
+      "priceFrom": "from {price}",
+      "pricePerClass": "{price} / lesson",
+      "prevMonth": "Previous month",
+      "nextMonth": "Next month",
+      "weekdays": ["M", "T", "W", "T", "F", "S", "S"],
+      "months": [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ],
+      "pickDay": "Select a day to see the available times.",
+      "noSlots": "No times available on this day. Try another date.",
+      "closedDay": "The academy is closed on this day.",
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "summaryEmpty": "Choose a day and time to continue.",
+      "summaryPending": "{day} · {time} · pending confirmation",
+      "submit": "Request lesson",
+      "confirmedTitle": "Request received",
+      "confirmedBody": "We confirm within 24 hours by email, with the assigned coach, the court and the meeting point.",
+      "confirmedDetail": "{classType} · {players} · {day} at {time}",
+      "reset": "Make another request",
+      "disclaimer": "Booking preview to show the flow. The real request is sent and confirmed by email; the coach is assigned afterwards."
+    }
+  },
+  "booking": {
+    "classTypes": {
+      "tennis-60": { "name": "Tennis lesson", "note": "Individual or group" },
+      "tennis-90": { "name": "Tennis lesson", "note": "Long session" },
+      "padel-60": { "name": "Padel lesson", "note": "Individual or group" },
+      "coaching": { "name": "Tournament coaching", "note": "Support in competition" }
+    }
+  },
+  "footer": {
+    "tagline": "Maspalomas, Gran Canaria. Tennis and padel for every age, 365 days a year.",
+    "colAcademy": "Academy",
+    "colServices": "Services",
+    "colContact": "Contact",
+    "linkPhilosophy": "Philosophy",
+    "linkHotels": "In-hotel service",
+    "linkStays": "Stays and camps",
+    "linkPrices": "Pricing",
+    "collabLabel": "In partnership with",
+    "rights": "© 2026 Darrod Tennis Academy",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy",
+    "cookies": "Cookies"
+  },
+  "form": {
+    "title": "Enquiry",
+    "intro": "Want to start training with us? Help us tailor the service by answering these questions.",
+    "name": "Name",
+    "phone": "Phone number",
+    "email": "Email",
+    "cityCountry": "City and country",
+    "age": "Age",
+    "level": "Level",
+    "levelOptions": { "low": "Beginner", "medium": "Intermediate", "high": "Advanced" },
+    "start": "Start date",
+    "duration": "Estimated length of stay",
+    "durationOptions": {
+      "week": "1 week",
+      "fortnight": "2 weeks",
+      "month": "1 month",
+      "quarter": "3 months",
+      "fullCourse": "Full course",
+      "openEnded": "Open-ended"
+    },
+    "schedule": "Preferred time",
+    "scheduleOptions": { "morning": "Morning", "afternoon": "Afternoon" },
+    "message": "Anything else",
+    "messagePlaceholder": "Tell us anything we should know.",
+    "terms": "I have read and accept the legal terms and conditions.",
+    "submit": "Send",
+    "choose": "Select an option",
+    "required": "This field is required.",
+    "invalidEmail": "Enter a valid email address.",
+    "acceptTerms": "You must accept the terms and conditions.",
+    "successTitle": "Thank you.",
+    "successBody": "We have received your details and will reply as soon as possible.",
+    "demoNote": "Demo form: submissions are not sent to a server yet."
+  },
+  "programasPage": {
+    "eyebrow": "Programmes",
+    "title": "For every age and every level.",
+    "intro": "Three paths, one methodology. Choose your starting point and we build the route.",
+    "methodologyTitle": "The same methodology across all three",
+    "cta": "Book a lesson",
+    "detailBack": "All programmes",
+    "worksOnLabel": "What we work on",
+    "coachesLabel": "Coaches",
+    "formatLabel": "Format",
+    "items": {
+      "junior": {
+        "format": "Groups by age and level · individual lessons available",
+        "intro": "The starting point for players aged 6 to 18. We build technique from footwork and balance up, with a biomechanical study of each player, and take the first steps into competition once the player is ready.",
+        "works": [
+          "Baseline, net and serve technique, starting from footwork",
+          "Individual biomechanical study and improvement plan",
+          "Coordination and physical preparation adapted to age",
+          "First competitions with a coach alongside"
+        ]
+      },
+      "pro": {
+        "format": "Competition · individual plan",
+        "intro": "For competitive players ready to step up. We work every variation of spin, match strategy and game patterns, and adjust psychology and physical preparation to each player's needs.",
+        "works": [
+          "Every variation of spin and its tactical use",
+          "Match strategy and a player's own game patterns",
+          "Reading the opponent and decisions under pressure",
+          "Sports psychology and individual physical preparation"
+        ]
+      },
+      "coaching": {
+        "format": "Local, national and international tournaments",
+        "intro": "Support in competition and sports advice. We plan the tournament calendar with the player and their family, and hold regular meetings to adjust goals and expectations.",
+        "works": [
+          "Planning the tournament calendar",
+          "On-site support during competition",
+          "Match analysis and adjustments between rounds",
+          "Follow-up meetings with player and family"
+        ]
+      }
+    }
+  },
+  "equipoPage": {
+    "eyebrow": "Our team",
+    "title": "Coaches with international experience.",
+    "intro": "Every Darrod coach works to the same training methodology, designed exclusively by the academy. During their development, players work with several coaches, and each one brings something personal to the process.",
+    "methodTitle": "How we work",
+    "method": [
+      {
+        "title": "Video analysis",
+        "body": "We record drills to find game patterns and analyse each player's technique. That study is the basis for the improvement plan."
+      },
+      {
+        "title": "Several coaches",
+        "body": "We schedule sessions with different coaches. Each professional brings something personal to the process and broadens the player's understanding."
+      },
+      {
+        "title": "A personal approach",
+        "body": "We keep a common methodology but adapt the process to each player. Groups are formed by age and level."
+      },
+      {
+        "title": "A competitive environment",
+        "body": "The programmes aim to improve the game in a demanding training environment, also building independence and handling pressure."
+      }
+    ],
+    "coachProgramLabel": "Programme",
+    "coachBackLabel": "The whole team",
+    "coachCta": "Book a lesson",
+    "bios": {
+      "daniel-rodriguez": "Director of the academy and owner of the Darrod methodology. He coordinates the coaching team and the follow-up of competition players.",
+      "daniel-gonzalez": "Coach in the competition area. He works on match strategy, game patterns and tournament preparation.",
+      "laurent-dairiam": "Coach on the Tennis Pro programme. He focuses on spin variations, tactics and reading the opponent.",
+      "javier-anibal": "Coach on the Junior programme. He builds technique from footwork up and guides the first steps into competition.",
+      "alberto-ottchota": "Padel coach. He runs individual and group lessons, and the holiday adult groups."
+    }
+  },
+  "reservarPage": {
+    "eyebrow": "Booking",
+    "title": "Book your lesson.",
+    "intro": "Choose the lesson type, the number of players and a slot in the calendar. We check coach and court availability and confirm by email within 24 hours.",
+    "graciasTitle": "Request received",
+    "graciasBody": "Thank you. We have logged your request and will write within 24 hours with the assigned coach, the court and the meeting point.",
+    "graciasStepsTitle": "What happens now",
+    "graciasCta": "Back home"
+  },
+  "torneos": {
+    "eyebrow": "Tournaments",
+    "title": "Tournaments in Gran Canaria.",
+    "intro": "Gran Canaria hosts more than nine international tournaments each season. The academy supports its players across the local, national and international calendar.",
+    "note": "Dates and categories follow each circuit's official calendar.",
+    "list": [
+      { "name": "GC Yellow Bowl", "category": "Under-12 and under-14" },
+      { "name": "Tennis Europe U14, G1", "category": "Under-14 · Grade 1" },
+      { "name": "ITF Juniors", "category": "Junior · world circuit" },
+      { "name": "ITF World Tour M15", "category": "Men's professional" },
+      { "name": "ITF World Tour W25", "category": "Women's professional" },
+      { "name": "ITF Seniors Tour", "category": "Seniors" }
+    ]
+  },
+  "hoteles": {
+    "eyebrow": "In-hotel service",
+    "title": "Train wherever you are.",
+    "body": "With our in-hotel service we keep your training going on holiday too. An academy coach comes to your hotel court at the agreed time. It is an exclusive service for an additional fee.",
+    "partnersLabel": "Partner hotels",
+    "stepsTitle": "How it works",
+    "steps": [
+      { "title": "Tell us where you are staying", "body": "Hotel, dates and the players' level." },
+      { "title": "We confirm court and coach", "body": "We check the hotel court's availability and assign a coach." },
+      { "title": "Train without travelling", "body": "The coach comes to your hotel at the agreed time." }
+    ],
+    "formTitle": "Request information"
+  },
+  "precios": {
+    "eyebrow": "Pricing",
+    "title": "Rates per hour.",
+    "body": "The price is per lesson hour, regardless of level. It is shared across the players in the group, so the more players, the lower the cost per person.",
+    "playersHeading": "Players",
+    "priceHeading": "Price / hour",
+    "rows": [
+      { "players": "1 player", "price": "€60" },
+      { "players": "2 players", "price": "€80" },
+      { "players": "3 players", "price": "€100" },
+      { "players": "4 players", "price": "€120" }
+    ],
+    "note": "Multi-lesson passes, long stays and holiday adult groups: ask for terms.",
+    "cta": "Book a lesson"
+  },
+  "contacto": {
+    "eyebrow": "Contact",
+    "title": "Let's talk.",
+    "body": "We are in Maspalomas, Gran Canaria. Write to us and we will reply as soon as possible.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "instagramLabel": "Instagram",
+    "locationLabel": "Where we are"
+  },
+  "legal": {
+    "disclaimer": "Guidance text. Before publishing the site, review and complete it with legal advice and the owner's real details.",
+    "lastUpdated": "Last updated: August 2026",
+    "avisoLegal": {
+      "title": "Legal notice",
+      "sections": [
+        { "heading": "Site owner", "body": "[Company / name] — [Tax ID] — [Address], Maspalomas, Gran Canaria. Contact email: info@darrodtennisacademy.com." },
+        { "heading": "Purpose", "body": "This website exists to provide information about the services of the Darrod Tennis Academy tennis and padel academy and to allow lesson and information requests." },
+        { "heading": "Terms of use", "body": "Access to this site implies acceptance of these terms. Users agree to make appropriate use of the content and not to use it for unlawful activities." },
+        { "heading": "Intellectual property", "body": "The texts, images, trademarks and logos on this site belong to their owners and may not be reproduced without authorisation." },
+        { "heading": "Liability", "body": "The owner is not responsible for damage arising from misuse of the site or from service interruptions beyond its control." }
+      ]
+    },
+    "privacidad": {
+      "title": "Privacy policy",
+      "sections": [
+        { "heading": "Data controller", "body": "[Company / name], with registered address at [Address], Maspalomas, Gran Canaria. Email: info@darrodtennisacademy.com." },
+        { "heading": "Data we process", "body": "The data you provide in the contact and enquiry forms: name, phone, email, city and country, age, level, dates and time preferences, plus any message you send us." },
+        { "heading": "Purpose", "body": "To answer your information or lesson request, manage the relationship with students and, where applicable, send you updates about the academy's activity." },
+        { "heading": "Legal basis", "body": "The consent you give when submitting the form, and the performance of the contract when you enrol in a programme." },
+        { "heading": "Retention", "body": "We keep the data for as long as the relationship lasts and, afterwards, for the applicable legal periods." },
+        { "heading": "Your rights", "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to info@darrodtennisacademy.com." }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "sections": [
+        { "heading": "What cookies are", "body": "Small files that a website stores in your browser to remember information about your visit." },
+        { "heading": "Cookies we use", "body": "This site is static and uses no analytics or advertising cookies. Only strictly necessary storage is used, to remember your selected language." },
+        { "heading": "Managing cookies", "body": "You can block or delete cookies from your browser settings. If you do, the site may not remember your language." }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has moved.",
+    "cta": "Back home"
+  }
+}
