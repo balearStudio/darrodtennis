@@ -57,10 +57,43 @@ public/
 - Legal text — `messages/*.json` → `legal.*` are **templates**; fill in the
   company name / tax ID / address and have them reviewed
 - Wider action photos of group & junior sessions; a hotel-service photo
-- The booking widget (`BookingMock`) is an **interactive mock** for showing the
-  client the flow. To go live, follow `design/darrod-build-guide.md §7` and
-  swap it for a real cal.com embed. The enquiry forms validate and show a
-  success state but do not submit anywhere yet.
+- The booking widget's **availability** is still a deterministic mock — the grid
+  of free/taken slots is derived from the date, not from a real calendar. The
+  request itself is real and arrives by email (see below); to show live
+  availability, follow `design/darrod-build-guide.md §7` and swap the calendar
+  for a cal.com embed.
+- The enquiry forms on `/contacto` and `/hoteles` (`forms/EnquiryForm`) still
+  validate and show a success state without submitting anywhere.
+
+## The booking request email
+
+`/reservar` (and the homepage widget) collects the visitor's name, email,
+country, phone with an international dial code, a free-text comment, and **any
+number of day + time combinations**, then sends the lot as a structured email.
+
+There is no server — the site is a static export — so the browser POSTs the
+request to [Web3Forms](https://web3forms.com), which relays it to the academy
+inbox. Setup, once:
+
+1. Get a free access key at <https://web3forms.com> for
+   `info@darrodtennisacademy.com` (the address in `src/lib/site.ts`).
+2. Locally, put it in `.env.local` (git-ignored):
+
+   ```bash
+   NEXT_PUBLIC_WEB3FORMS_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+   ```
+
+3. For the deployed site, add it as a repo secret named `WEB3FORMS_KEY`
+   (Settings → Secrets and variables → Actions). `deploy.yml` already passes it
+   to the build.
+
+The key is public by design — it only authorises "send mail to the address this
+key is bound to" — but it lives in an env var so it stays out of the repo.
+
+**With no key configured** (a fresh clone, a preview build) nothing breaks: the
+form falls back to opening the visitor's own mail client with the same
+structured body pre-filled. The wiring is in `src/lib/bookingRequest.ts`; to
+move to Formspree or a real backend later, that one file is the seam.
 
 ## Deploying to GitHub Pages
 

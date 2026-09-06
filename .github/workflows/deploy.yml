@@ -40,6 +40,11 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
+          # Web3Forms access key for the booking form. Public by design (it only
+          # authorises "mail the address this key is bound to"), but kept as a
+          # repo secret so it is not committed. Without it the form falls back
+          # to opening the visitor's own mail client.
+          NEXT_PUBLIC_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

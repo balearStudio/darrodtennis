@@ -142,3 +142,16 @@ export function monthGrid(year: number, month: number): (Date | null)[] {
   while (cells.length % 7 !== 0) cells.push(null);
   return cells;
 }
+
+/** `YYYY-MM-DD` in local time — the stable id for a picked day. */
+export function dateKey(date: Date): string {
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${date.getFullYear()}-${m}-${d}`;
+}
+
+/** Inverse of `dateKey`; parses as local midnight, not UTC. */
+export function dateFromKey(key: string): Date {
+  const [y, m, d] = key.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
