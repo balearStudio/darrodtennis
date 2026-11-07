@@ -37,7 +37,7 @@ src/
   app/[locale]/          every route, nested under the locale segment
     layout.tsx           root layout: fonts, <html lang>, header, footer
     page.tsx             homepage (Hero, Filosofía, Programas, Equipo, Reservar)
-    programas/ equipo/ reservar/ torneos/ hoteles/ precios/ contacto/
+    programas/ equipo/ reservar/ torneos/ hoteles/ contacto/
     aviso-legal/ privacidad/ cookies/
   app/not-found.tsx      standalone 404 (served as /404.html by GitHub Pages)
   app/sitemap.ts robots.ts

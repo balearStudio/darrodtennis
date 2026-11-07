@@ -10,7 +10,6 @@ const PATHS = [
   "/reservar",
   "/torneos",
   "/hoteles",
-  "/precios",
   "/contacto",
   "/aviso-legal",
   "/privacidad",

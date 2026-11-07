@@ -12,8 +12,7 @@
     "instagramUrl": "https://www.instagram.com/darrodtennisacademy/",
     "whatsapp": "WhatsApp",
     "phone": "Teléfono",
-    "location": "Maspalomas, Gran Canaria",
-    "perHour": "/ hora"
+    "location": "Maspalomas, Gran Canaria"
   },
   "meta": {
     "siteName": "Darrod Tennis Academy",
@@ -47,10 +46,6 @@
     "hoteles": {
       "title": "Clases de tenis en tu hotel de Maspalomas",
       "description": "Clases de tenis durante tus vacaciones en Maspalomas: un entrenador de la academia acude a la pista de tu hotel a la hora acordada. Servicio con coste adicional."
-    },
-    "precios": {
-      "title": "Precios de clases de tenis en Maspalomas",
-      "description": "Precio de las clases de tenis en Maspalomas: 60 € la hora para un jugador y hasta 120 € para cuatro, a repartir entre el grupo. Bonos y estancias largas, a consultar."
     },
     "contacto": {
       "title": "Contacto: academia de tenis en Maspalomas",
@@ -105,7 +100,7 @@
       { "value": "4", "label": "Pistas · tierra y rápida" },
       { "value": "5", "label": "Entrenadores titulados" },
       { "value": "9+", "label": "Torneos internacionales" },
-      { "value": "desde 60 €", "label": "Clase privada / hora" }
+      { "value": "1–4", "label": "Jugadores por clase" }
     ]
   },
   "phil": {
@@ -140,8 +135,6 @@
       "Pádel en grupo",
       "Adultos vacacionales"
     ],
-    "fromLabel": "Desde",
-    "fromPrice": "60 €",
     "items": {
       "junior": {
         "index": "01",
@@ -227,8 +220,6 @@
       "playersOne": "jugador",
       "playersOther": "jugadores",
       "duration": "{minutes} min",
-      "priceFrom": "desde {price}",
-      "pricePerClass": "{price} / clase",
       "prevMonth": "Mes anterior",
       "nextMonth": "Mes siguiente",
       "weekdays": ["L", "M", "X", "J", "V", "S", "D"],
@@ -247,7 +238,6 @@
       "removeSession": "Quitar {day} a las {time}",
       "sessionsOne": "sesión",
       "sessionsOther": "sesiones",
-      "totalLabel": "Total {price}",
       "fieldName": "Nombre y apellidos",
       "namePlaceholder": "Ana García",
       "fieldEmail": "Correo electrónico",
@@ -265,7 +255,7 @@
       "acceptTerms": "Debes aceptar la política de privacidad.",
       "noSessions": "Añade al menos una fecha y hora.",
       "summaryEmpty": "Añade al menos una sesión para continuar.",
-      "summaryPending": "{count} {unit} · {total} · pendiente de confirmación",
+      "summaryPending": "{count} {unit} · pendiente de confirmación",
       "submit": "Solicitar clase",
       "sending": "Enviando…",
       "confirmedTitle": "Solicitud recibida",
@@ -295,7 +285,6 @@
     "linkPhilosophy": "Filosofía",
     "linkHotels": "Servicio en hoteles",
     "linkStays": "Estancias y campus",
-    "linkPrices": "Precios",
     "collabLabel": "Colaboramos con",
     "rights": "© 2026 Darrod Tennis Academy",
     "legalNotice": "Aviso legal",
@@ -448,21 +437,6 @@
       { "title": "Entrenas sin desplazarte", "body": "El entrenador acude a tu hotel a la hora acordada." }
     ],
     "formTitle": "Solicita información"
-  },
-  "precios": {
-    "eyebrow": "Precios",
-    "title": "Tarifas por hora.",
-    "body": "El precio es por clase y hora, con independencia del nivel. Se reparte entre los jugadores del grupo, así que a más jugadores, menos coste por persona.",
-    "playersHeading": "Jugadores",
-    "priceHeading": "Precio / hora",
-    "rows": [
-      { "players": "1 jugador", "price": "60 €" },
-      { "players": "2 jugadores", "price": "80 €" },
-      { "players": "3 jugadores", "price": "100 €" },
-      { "players": "4 jugadores", "price": "120 €" }
-    ],
-    "note": "Bonos, estancias largas y grupos de adultos vacacionales: consulta condiciones.",
-    "cta": "Reservar una clase"
   },
   "contacto": {
     "eyebrow": "Contacto",

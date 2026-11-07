@@ -14,12 +14,10 @@ export type ClassType = {
   minutes: number;
   minPlayers: number;
   maxPlayers: number;
-  /** Price in euros for a given player count. */
-  price: (players: number) => number;
 };
 
-const TENNIS_TIER = [60, 80, 100, 120];
-const LONG_TIER = [90, 120, 150, 180];
+// No prices on the site: they depend on where the lesson happens (academy
+// courts or a hotel), so the academy quotes each request by email.
 
 export const CLASS_TYPES: ClassType[] = [
   {
@@ -27,37 +25,29 @@ export const CLASS_TYPES: ClassType[] = [
     minutes: 60,
     minPlayers: 1,
     maxPlayers: 4,
-    price: (p) => TENNIS_TIER[clampPlayers(p, 1, 4) - 1],
   },
   {
     id: "tennis-90",
     minutes: 90,
     minPlayers: 1,
     maxPlayers: 4,
-    price: (p) => LONG_TIER[clampPlayers(p, 1, 4) - 1],
   },
   {
     id: "padel-60",
     minutes: 60,
     minPlayers: 2,
     maxPlayers: 4,
-    price: (p) => TENNIS_TIER[clampPlayers(p, 2, 4) - 1],
   },
   {
     id: "coaching",
     minutes: 120,
     minPlayers: 1,
     maxPlayers: 2,
-    price: () => 180,
   },
 ];
 
 export const classTypeById = (id: ClassTypeId): ClassType =>
   CLASS_TYPES.find((c) => c.id === id) ?? CLASS_TYPES[0];
-
-function clampPlayers(value: number, min: number, max: number) {
-  return Math.min(max, Math.max(min, value));
-}
 
 export type Slot = { time: string; taken: boolean };
 
@@ -108,11 +98,6 @@ export function firstAvailableDay(
     cursor.setDate(cursor.getDate() + 1);
   }
   return null;
-}
-
-export function formatPrice(value: number, locale: string): string {
-  // Design guide §4: `60 €` (ES, space before €) / `€60` (EN).
-  return locale === "es" ? `${value} €` : `€${value}`;
 }
 
 export function sameDay(a: Date | null, b: Date | null): boolean {

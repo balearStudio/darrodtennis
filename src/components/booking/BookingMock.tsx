@@ -8,7 +8,6 @@ import {
   dateFromKey,
   dateKey,
   firstAvailableDay,
-  formatPrice,
   hasAvailability,
   isMorning,
   isOpenDay,
@@ -139,9 +138,6 @@ export function BookingMock({ compact = false }: Props) {
   const morning = daySlots.filter((s) => isMorning(s.time));
   const afternoon = daySlots.filter((s) => !isMorning(s.time));
 
-  const unitPrice = classType.price(players);
-  const price = formatPrice(unitPrice, locale);
-  const totalPrice = formatPrice(unitPrice * sorted.length, locale);
   const durationLabel = t("duration", { minutes: classType.minutes });
   const playersLabel = `${players} ${players === 1 ? t("playersOne") : t("playersOther")}`;
   const sessionUnit =
@@ -227,8 +223,6 @@ export function BookingMock({ compact = false }: Props) {
       comment,
       classType: tct(`${classId}.name`),
       players,
-      unitPrice: price,
-      totalPrice,
       sessions: sorted.map((s) => ({
         date: s.date,
         time: s.time,
@@ -272,11 +266,8 @@ export function BookingMock({ compact = false }: Props) {
               {tct(`${classId}.note`)}
             </div>
           </div>
-          <div className="shrink-0 text-right">
-            <div className="text-[1.25rem] tracking-[-0.01em]">{price}</div>
-            <div className="mt-1 font-mono text-[10.5px] uppercase tracking-[0.14em] text-cream/45">
-              {playersLabel}
-            </div>
+          <div className="shrink-0 pt-1 text-right font-mono text-[10.5px] uppercase tracking-[0.14em] text-cream/45">
+            {playersLabel}
           </div>
         </div>
 
@@ -673,7 +664,6 @@ export function BookingMock({ compact = false }: Props) {
                   ? t("summaryPending", {
                       count: sorted.length,
                       unit: sessionUnit,
-                      total: t("totalLabel", { price: totalPrice }),
                     })
                   : t("summaryEmpty")}
               </span>

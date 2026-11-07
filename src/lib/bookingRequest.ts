@@ -40,10 +40,6 @@ export type BookingRequest = {
   comment: string;
   classType: string;
   players: number;
-  /** Formatted price of a single session, e.g. "60 €". */
-  unitPrice: string;
-  /** Formatted price for every requested session. */
-  totalPrice: string;
   sessions: RequestedSession[];
 };
 
@@ -71,7 +67,6 @@ export function summarise(r: BookingRequest): string {
     "— Clase —",
     `Tipo:       ${r.classType}`,
     `Jugadores:  ${r.players}`,
-    `Precio:     ${r.unitPrice} por sesión · ${r.totalPrice} en total`,
     "",
     `— Fechas solicitadas (${r.sessions.length}) —`,
     ...sessionLines(r).map((line) => `· ${line}`),
@@ -102,7 +97,6 @@ function payload(r: BookingRequest) {
     País: `${r.country} (${r.countryCode})`,
     "Tipo de clase": r.classType,
     Jugadores: String(r.players),
-    Precio: `${r.unitPrice} por sesión · ${r.totalPrice} en total`,
     "Fechas solicitadas": sessionLines(r).join("\n"),
     Comentario: r.comment.trim() || "—",
     "Idioma de la web": r.locale.toUpperCase(),

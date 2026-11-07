@@ -39,9 +39,6 @@ export function businessSchema(locale: Locale, description: string) {
     },
     areaServed: { "@type": "Place", name: "Gran Canaria" },
     sport: ["Tennis", "Padel"],
-    // Matches the hourly rates on /precios (1 to 4 players).
-    priceRange: "60 € – 120 €",
-    currenciesAccepted: "EUR",
   };
 }
 

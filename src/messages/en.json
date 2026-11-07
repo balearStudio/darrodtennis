@@ -12,8 +12,7 @@
     "instagramUrl": "https://www.instagram.com/darrodtennisacademy/",
     "whatsapp": "WhatsApp",
     "phone": "Phone",
-    "location": "Maspalomas, Gran Canaria",
-    "perHour": "/ hour"
+    "location": "Maspalomas, Gran Canaria"
   },
   "meta": {
     "siteName": "Darrod Tennis Academy",
@@ -47,10 +46,6 @@
     "hoteles": {
       "title": "Tennis lessons at your hotel in Maspalomas",
       "description": "Tennis lessons on holiday in Maspalomas: an academy coach comes to your hotel court at the agreed time. An exclusive service for an additional fee."
-    },
-    "precios": {
-      "title": "Tennis lesson prices in Maspalomas",
-      "description": "Tennis lesson prices in Maspalomas: €60 per hour for one player, up to €120 for four, shared across the group. Ask about passes and long stays."
     },
     "contacto": {
       "title": "Contact our tennis academy in Maspalomas",
@@ -105,7 +100,7 @@
       { "value": "4", "label": "Courts · clay and hard" },
       { "value": "5", "label": "Certified coaches" },
       { "value": "9+", "label": "International tournaments" },
-      { "value": "from €60", "label": "Private lesson / hour" }
+      { "value": "1–4", "label": "Players per lesson" }
     ]
   },
   "phil": {
@@ -140,8 +135,6 @@
       "Group padel",
       "Holiday adult groups"
     ],
-    "fromLabel": "From",
-    "fromPrice": "€60",
     "items": {
       "junior": {
         "index": "01",
@@ -227,8 +220,6 @@
       "playersOne": "player",
       "playersOther": "players",
       "duration": "{minutes} min",
-      "priceFrom": "from {price}",
-      "pricePerClass": "{price} / lesson",
       "prevMonth": "Previous month",
       "nextMonth": "Next month",
       "weekdays": ["M", "T", "W", "T", "F", "S", "S"],
@@ -247,7 +238,6 @@
       "removeSession": "Remove {day} at {time}",
       "sessionsOne": "session",
       "sessionsOther": "sessions",
-      "totalLabel": "Total {price}",
       "fieldName": "Full name",
       "namePlaceholder": "Ana García",
       "fieldEmail": "Email",
@@ -265,7 +255,7 @@
       "acceptTerms": "You must accept the privacy policy.",
       "noSessions": "Add at least one date and time.",
       "summaryEmpty": "Add at least one session to continue.",
-      "summaryPending": "{count} {unit} · {total} · pending confirmation",
+      "summaryPending": "{count} {unit} · pending confirmation",
       "submit": "Request lesson",
       "sending": "Sending…",
       "confirmedTitle": "Request received",
@@ -295,7 +285,6 @@
     "linkPhilosophy": "Philosophy",
     "linkHotels": "In-hotel service",
     "linkStays": "Stays and camps",
-    "linkPrices": "Pricing",
     "collabLabel": "In partnership with",
     "rights": "© 2026 Darrod Tennis Academy",
     "legalNotice": "Legal notice",
@@ -448,21 +437,6 @@
       { "title": "Train without travelling", "body": "The coach comes to your hotel at the agreed time." }
     ],
     "formTitle": "Request information"
-  },
-  "precios": {
-    "eyebrow": "Pricing",
-    "title": "Rates per hour.",
-    "body": "The price is per lesson hour, regardless of level. It is shared across the players in the group, so the more players, the lower the cost per person.",
-    "playersHeading": "Players",
-    "priceHeading": "Price / hour",
-    "rows": [
-      { "players": "1 player", "price": "€60" },
-      { "players": "2 players", "price": "€80" },
-      { "players": "3 players", "price": "€100" },
-      { "players": "4 players", "price": "€120" }
-    ],
-    "note": "Multi-lesson passes, long stays and holiday adult groups: ask for terms.",
-    "cta": "Book a lesson"
   },
   "contacto": {
     "eyebrow": "Contact",

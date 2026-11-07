@@ -24,7 +24,6 @@ export async function SiteFooter() {
         { label: tn("cta"), href: "/reservar" },
         { label: t("linkHotels"), href: "/hoteles" },
         { label: t("linkStays"), href: "/contacto" },
-        { label: t("linkPrices"), href: "/precios" },
       ],
     },
   ];
