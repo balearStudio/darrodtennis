@@ -8,7 +8,7 @@ export const SITE_URL =
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const CONTACT = {
-  email: "info@darrodtennisacademy.com",
+  email: "darrodtennisacademy@gmail.com",
   /**
    * Phone / WhatsApp are still pending from the client. Fill both and the links
    * switch on across the footer, the contact page and the header:

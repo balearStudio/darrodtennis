@@ -7,7 +7,7 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "backToHome": "Back home",
-    "email": "info@darrodtennisacademy.com",
+    "email": "darrodtennisacademy@gmail.com",
     "instagram": "Instagram",
     "instagramUrl": "https://www.instagram.com/darrodtennisacademy/",
     "whatsapp": "WhatsApp",
@@ -451,7 +451,7 @@
     "avisoLegal": {
       "title": "Legal notice",
       "sections": [
-        { "heading": "Site owner", "body": "[Company / name] — [Tax ID] — [Address], Maspalomas, Gran Canaria. Contact email: info@darrodtennisacademy.com." },
+        { "heading": "Site owner", "body": "[Company / name] — [Tax ID] — [Address], Maspalomas, Gran Canaria. Contact email: darrodtennisacademy@gmail.com." },
         { "heading": "Purpose", "body": "This website exists to provide information about the services of the Darrod Tennis Academy tennis and padel academy and to allow lesson and information requests." },
         { "heading": "Terms of use", "body": "Access to this site implies acceptance of these terms. Users agree to make appropriate use of the content and not to use it for unlawful activities." },
         { "heading": "Intellectual property", "body": "The texts, images, trademarks and logos on this site belong to their owners and may not be reproduced without authorisation." },
@@ -461,12 +461,12 @@
     "privacidad": {
       "title": "Privacy policy",
       "sections": [
-        { "heading": "Data controller", "body": "[Company / name], with registered address at [Address], Maspalomas, Gran Canaria. Email: info@darrodtennisacademy.com." },
+        { "heading": "Data controller", "body": "[Company / name], with registered address at [Address], Maspalomas, Gran Canaria. Email: darrodtennisacademy@gmail.com." },
         { "heading": "Data we process", "body": "The data you provide in the contact and enquiry forms: name, phone, email, city and country, age, level, dates and time preferences, plus any message you send us." },
         { "heading": "Purpose", "body": "To answer your information or lesson request, manage the relationship with students and, where applicable, send you updates about the academy's activity." },
         { "heading": "Legal basis", "body": "The consent you give when submitting the form, and the performance of the contract when you enrol in a programme." },
         { "heading": "Retention", "body": "We keep the data for as long as the relationship lasts and, afterwards, for the applicable legal periods." },
-        { "heading": "Your rights", "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to info@darrodtennisacademy.com." }
+        { "heading": "Your rights", "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to darrodtennisacademy@gmail.com." }
       ]
     },
     "cookies": {

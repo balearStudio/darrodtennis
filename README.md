@@ -76,7 +76,7 @@ request to [Web3Forms](https://web3forms.com), which relays it to the academy
 inbox. Setup, once:
 
 1. Get a free access key at <https://web3forms.com> for
-   `info@darrodtennisacademy.com` (the address in `src/lib/site.ts`).
+   `darrodtennisacademy@gmail.com` (the address in `src/lib/site.ts`).
 2. Locally, put it in `.env.local` (git-ignored):
 
    ```bash

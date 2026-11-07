@@ -7,7 +7,7 @@
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
     "backToHome": "Volver al inicio",
-    "email": "info@darrodtennisacademy.com",
+    "email": "darrodtennisacademy@gmail.com",
     "instagram": "Instagram",
     "instagramUrl": "https://www.instagram.com/darrodtennisacademy/",
     "whatsapp": "WhatsApp",
@@ -451,7 +451,7 @@
     "avisoLegal": {
       "title": "Aviso legal",
       "sections": [
-        { "heading": "Titular del sitio", "body": "[Razón social / nombre] — [NIF/CIF] — [Domicilio], Maspalomas, Gran Canaria. Correo de contacto: info@darrodtennisacademy.com." },
+        { "heading": "Titular del sitio", "body": "[Razón social / nombre] — [NIF/CIF] — [Domicilio], Maspalomas, Gran Canaria. Correo de contacto: darrodtennisacademy@gmail.com." },
         { "heading": "Objeto", "body": "Este sitio web tiene como finalidad informar sobre los servicios de la academia de tenis y pádel Darrod Tennis Academy y permitir la solicitud de clases e información." },
         { "heading": "Condiciones de uso", "body": "El acceso a este sitio implica la aceptación de las presentes condiciones. El usuario se compromete a hacer un uso adecuado de los contenidos y a no emplearlos para actividades ilícitas." },
         { "heading": "Propiedad intelectual", "body": "Los textos, imágenes, marcas y logotipos de este sitio pertenecen a sus titulares y no pueden reproducirse sin autorización." },
@@ -461,12 +461,12 @@
     "privacidad": {
       "title": "Política de privacidad",
       "sections": [
-        { "heading": "Responsable del tratamiento", "body": "[Razón social / nombre], con domicilio en [Domicilio], Maspalomas, Gran Canaria. Correo: info@darrodtennisacademy.com." },
+        { "heading": "Responsable del tratamiento", "body": "[Razón social / nombre], con domicilio en [Domicilio], Maspalomas, Gran Canaria. Correo: darrodtennisacademy@gmail.com." },
         { "heading": "Datos que tratamos", "body": "Los que facilitas en los formularios de contacto e inscripción: nombre, teléfono, correo, ciudad y país, edad, nivel, fechas y preferencias de horario, además del mensaje que nos envíes." },
         { "heading": "Finalidad", "body": "Atender tu solicitud de información o de clases, gestionar la relación con el alumnado y, en su caso, enviarte comunicaciones sobre la actividad de la academia." },
         { "heading": "Legitimación", "body": "El consentimiento que prestas al enviar el formulario y la ejecución de la relación contractual cuando te inscribes en un programa." },
         { "heading": "Conservación", "body": "Conservamos los datos mientras dure la relación y, después, durante los plazos legales aplicables." },
-        { "heading": "Derechos", "body": "Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a info@darrodtennisacademy.com." }
+        { "heading": "Derechos", "body": "Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a darrodtennisacademy@gmail.com." }
       ]
     },
     "cookies": {
