@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { createMetadata } from "@/lib/metadata";
-import { businessSchema } from "@/lib/schema";
+import { businessSchema, websiteSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 import { Hero } from "@/components/home/Hero";
 import { Filosofia } from "@/components/home/Filosofia";
@@ -26,6 +26,7 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <JsonLd data={businessSchema(locale, t("home.description"))} />
+      <JsonLd data={websiteSchema(locale)} />
       <Hero />
       <Filosofia />
       <Programas />

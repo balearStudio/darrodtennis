@@ -6,6 +6,7 @@ import { HeroVideo } from "@/components/home/HeroVideo";
 
 export async function Hero() {
   const t = await getTranslations("hero");
+  const tmeta = await getTranslations("meta");
   const stats = t.raw("stats") as { value: string; label: string }[];
 
   return (
@@ -14,7 +15,7 @@ export async function Hero() {
       <div className="absolute inset-0">
         <Img
           src="/images/aerial.jpg"
-          alt="Vista aérea de las pistas de Darrod Tennis Academy en Maspalomas"
+          alt={tmeta("ogAlt")}
           fill
           priority
           sizes="100vw"
@@ -60,11 +61,17 @@ export async function Hero() {
 
       <div className="px-side relative z-10 pb-12 pt-32">
         <div className="max-w-[62rem] pb-12">
-          <Eyebrow>{t("eyebrow")}</Eyebrow>
-          <h1 className="text-display mt-7 text-cream">
+          {/* The eyebrow carries the search phrase ("tennis academy in
+              Maspalomas"), so it is the h1; the slogan below is display copy. */}
+          {/* Longer than the other eyebrows: wraps on phones, so open up the
+              label's 1.0 line-height. */}
+          <Eyebrow as="h1" className="[&>span:last-child]:leading-[1.5]">
+            {t("eyebrow")}
+          </Eyebrow>
+          <p className="text-display mt-7 text-cream">
             {t("titleLine1")}{" "}
             <span className="font-accent">{t("titleAccent")}</span>
-          </h1>
+          </p>
           <p className="mt-8 max-w-[32rem] text-body text-cream/70">{t("body")}</p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Cta href="/reservar" variant="primary">

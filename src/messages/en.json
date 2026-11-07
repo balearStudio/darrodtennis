@@ -17,45 +17,74 @@
   },
   "meta": {
     "siteName": "Darrod Tennis Academy",
+    "ogAlt": "Aerial view of the courts at Darrod Tennis Academy in Maspalomas, Gran Canaria",
+    "breadcrumbHome": "Home",
+    "coachSuffix": "Part of the team at Darrod Tennis Academy, the tennis and padel academy in Maspalomas, Gran Canaria.",
     "home": {
-      "title": "Darrod Tennis Academy — Tennis and padel in Maspalomas, Gran Canaria",
-      "description": "A tennis and padel academy in Maspalomas for every age and level. Our own methodology, coaches with international experience, and lessons 365 days a year."
+      "title": "Tennis and padel academy in Maspalomas · Darrod Tennis Academy",
+      "description": "Tennis and padel academy in Maspalomas, Gran Canaria, for children and adults of every level. Certified coaches and lessons 365 days a year."
     },
     "programas": {
-      "title": "Programmes",
-      "description": "Junior Tennis, Tennis Pro and tournament coaching. Three paths, one methodology, for every age and every level."
+      "title": "Tennis lessons and programmes in Maspalomas",
+      "description": "Tennis lessons for children, juniors and competitive players in Maspalomas: Junior Tennis, Tennis Pro and tournament coaching, all with one methodology."
     },
     "equipo": {
-      "title": "Team",
-      "description": "Five certified coaches with international experience, working to one methodology designed by the academy."
+      "title": "Tennis and padel coaches in Maspalomas",
+      "description": "Meet the Darrod Tennis Academy team: five certified tennis and padel coaches with international experience and one shared methodology, in Maspalomas."
     },
     "reservar": {
-      "title": "Book a lesson",
-      "description": "Choose your time and we assign the coach. One calendar for the whole academy, confirmed within 24 hours."
+      "title": "Book a tennis lesson in Maspalomas",
+      "description": "Book your tennis lesson in Maspalomas online: pick one or more days and times and we assign the coach. Confirmed within 24 hours."
     },
     "gracias": {
       "title": "Request received",
       "description": "We have received your lesson request."
     },
     "torneos": {
-      "title": "Tournaments",
-      "description": "Gran Canaria hosts more than nine international tournaments each season. We support our players across the local, national and international calendar."
+      "title": "Tennis tournaments in Gran Canaria",
+      "description": "Gran Canaria hosts more than nine international tennis tournaments each season. We support our players across the local, national and international calendar."
     },
     "hoteles": {
-      "title": "In-hotel service",
-      "description": "Train wherever you are. Coaching at hotels in Maspalomas, for an additional fee."
+      "title": "Tennis lessons at your hotel in Maspalomas",
+      "description": "Tennis lessons on holiday in Maspalomas: an academy coach comes to your hotel court at the agreed time. An exclusive service for an additional fee."
     },
     "precios": {
-      "title": "Pricing",
-      "description": "Rates per lesson hour: from €60 for one player to €120 for four. The price is shared across the group."
+      "title": "Tennis lesson prices in Maspalomas",
+      "description": "Tennis lesson prices in Maspalomas: €60 per hour for one player, up to €120 for four, shared across the group. Ask about passes and long stays."
     },
     "contacto": {
-      "title": "Contact",
-      "description": "Maspalomas, Gran Canaria. Get in touch to start training with us."
+      "title": "Contact our tennis academy in Maspalomas",
+      "description": "Get in touch with Darrod Tennis Academy, the tennis and padel academy in Maspalomas, Gran Canaria. We reply as soon as possible."
     },
-    "avisoLegal": { "title": "Legal notice", "description": "Legal information for Darrod Tennis Academy." },
-    "privacidad": { "title": "Privacy policy", "description": "How we handle your personal data." },
-    "cookies": { "title": "Cookie policy", "description": "Use of cookies on this website." }
+    "avisoLegal": {
+      "title": "Legal notice",
+      "description": "Legal information for Darrod Tennis Academy."
+    },
+    "privacidad": {
+      "title": "Privacy policy",
+      "description": "How we handle your personal data."
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "description": "Use of cookies on this website."
+    },
+    "program": {
+      "junior": {
+        "title": "Junior Tennis: tennis for kids aged 6 to 18",
+        "description": "Tennis lessons for children and juniors aged 6 to 18 in Maspalomas. Technique built from footwork up, a biomechanical study of each player and first steps into competition.",
+        "serviceType": "Tennis lessons for children"
+      },
+      "pro": {
+        "title": "Tennis Pro: competitive tennis training",
+        "description": "Tennis training for competitive players in Maspalomas: spin, match strategy, game patterns, psychology and physical preparation on an individual plan.",
+        "serviceType": "Competitive tennis training"
+      },
+      "coaching": {
+        "title": "Tennis coaching and tournament support",
+        "description": "Support at local, national and international tennis tournaments from Gran Canaria, with a calendar planned together with the player and their family.",
+        "serviceType": "Tennis coaching and tournament support"
+      }
+    }
   },
   "nav": {
     "academy": "Academy",
@@ -66,7 +95,7 @@
     "cta": "Book a lesson"
   },
   "hero": {
-    "eyebrow": "Maspalomas · Gran Canaria",
+    "eyebrow": "Tennis and padel academy in Maspalomas",
     "titleLine1": "Tennis 365 days a year,",
     "titleAccent": "in the best climate in the world.",
     "body": "A tennis and padel academy for every age and level. Our own methodology, coaches with international experience, and personal attention in every session.",

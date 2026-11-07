@@ -17,45 +17,74 @@
   },
   "meta": {
     "siteName": "Darrod Tennis Academy",
+    "ogAlt": "Vista aérea de las pistas de Darrod Tennis Academy en Maspalomas, Gran Canaria",
+    "breadcrumbHome": "Inicio",
+    "coachSuffix": "Equipo de Darrod Tennis Academy, academia de tenis y pádel en Maspalomas (Gran Canaria).",
     "home": {
-      "title": "Darrod Tennis Academy — Tenis y pádel en Maspalomas, Gran Canaria",
-      "description": "Academia de tenis y pádel en Maspalomas para todas las edades y niveles. Metodología propia, entrenadores con recorrido internacional y clases los 365 días del año."
+      "title": "Academia de tenis y pádel en Maspalomas · Darrod Tennis Academy",
+      "description": "Academia de tenis y pádel en Maspalomas (Gran Canaria) para niños y adultos de todos los niveles. Entrenadores titulados y clases los 365 días del año."
     },
     "programas": {
-      "title": "Programas",
-      "description": "Junior Tennis, Tennis Pro y Coaching de torneos. Tres itinerarios con una misma metodología, para cada edad y cada nivel."
+      "title": "Clases y programas de tenis en Maspalomas",
+      "description": "Clases de tenis para niños, jóvenes y jugadores de competición en Maspalomas: Junior Tennis, Tennis Pro y coaching de torneos, con una misma metodología."
     },
     "equipo": {
-      "title": "Equipo",
-      "description": "Cinco entrenadores titulados con recorrido internacional, una metodología común diseñada por la academia."
+      "title": "Entrenadores de tenis y pádel en Maspalomas",
+      "description": "Conoce al equipo de Darrod Tennis Academy: cinco entrenadores titulados de tenis y pádel con recorrido internacional y una metodología común, en Maspalomas."
     },
     "reservar": {
-      "title": "Reservar clase",
-      "description": "Elige tu hora y nosotros asignamos al entrenador. Un único calendario para toda la academia, confirmación en menos de 24 horas."
+      "title": "Reserva tu clase de tenis en Maspalomas",
+      "description": "Reserva online tu clase de tenis en Maspalomas: elige uno o varios días y horas y te asignamos entrenador. Confirmación en menos de 24 horas."
     },
     "gracias": {
       "title": "Solicitud recibida",
       "description": "Hemos recibido tu solicitud de clase."
     },
     "torneos": {
-      "title": "Torneos",
-      "description": "Gran Canaria acoge más de nueve torneos internacionales cada temporada. Acompañamos a nuestros jugadores en el calendario local, nacional e internacional."
+      "title": "Torneos de tenis en Gran Canaria",
+      "description": "Gran Canaria acoge más de nueve torneos internacionales de tenis cada temporada. Acompañamos a nuestros jugadores en el calendario local, nacional e internacional."
     },
     "hoteles": {
-      "title": "Servicio en hoteles",
-      "description": "Entrena donde estés. Servicio de entrenamiento en hoteles de Maspalomas, con coste adicional."
+      "title": "Clases de tenis en tu hotel de Maspalomas",
+      "description": "Clases de tenis durante tus vacaciones en Maspalomas: un entrenador de la academia acude a la pista de tu hotel a la hora acordada. Servicio con coste adicional."
     },
     "precios": {
-      "title": "Precios",
-      "description": "Tarifas por hora de clase: de 60 € para un jugador a 120 € para cuatro. El precio se reparte entre el grupo."
+      "title": "Precios de clases de tenis en Maspalomas",
+      "description": "Precio de las clases de tenis en Maspalomas: 60 € la hora para un jugador y hasta 120 € para cuatro, a repartir entre el grupo. Bonos y estancias largas, a consultar."
     },
     "contacto": {
-      "title": "Contacto",
-      "description": "Maspalomas, Gran Canaria. Escríbenos para empezar a entrenar con nosotros."
+      "title": "Contacto: academia de tenis en Maspalomas",
+      "description": "Escríbenos para empezar a entrenar con Darrod Tennis Academy, academia de tenis y pádel en Maspalomas, Gran Canaria. Te respondemos lo antes posible."
     },
-    "avisoLegal": { "title": "Aviso legal", "description": "Información legal de Darrod Tennis Academy." },
-    "privacidad": { "title": "Política de privacidad", "description": "Cómo tratamos tus datos personales." },
-    "cookies": { "title": "Política de cookies", "description": "Uso de cookies en este sitio web." }
+    "avisoLegal": {
+      "title": "Aviso legal",
+      "description": "Información legal de Darrod Tennis Academy."
+    },
+    "privacidad": {
+      "title": "Política de privacidad",
+      "description": "Cómo tratamos tus datos personales."
+    },
+    "cookies": {
+      "title": "Política de cookies",
+      "description": "Uso de cookies en este sitio web."
+    },
+    "program": {
+      "junior": {
+        "title": "Junior Tennis: tenis para niños de 6 a 18 años",
+        "description": "Clases de tenis para niños y jóvenes de 6 a 18 años en Maspalomas. Técnica desde los apoyos, estudio biomecánico de cada jugador y primeros pasos en la competición.",
+        "serviceType": "Clases de tenis para niños"
+      },
+      "pro": {
+        "title": "Tennis Pro: entrenamiento de tenis de competición",
+        "description": "Entrenamiento de tenis para jugadores de competición en Maspalomas: efectos, estrategia de partido, patrones de juego, psicología y preparación física con plan individual.",
+        "serviceType": "Entrenamiento de tenis de competición"
+      },
+      "coaching": {
+        "title": "Coaching de tenis y acompañamiento a torneos",
+        "description": "Acompañamiento a torneos de tenis locales, nacionales e internacionales desde Gran Canaria, con un calendario planificado junto al jugador y su familia.",
+        "serviceType": "Coaching y acompañamiento a torneos de tenis"
+      }
+    }
   },
   "nav": {
     "academy": "Academia",
@@ -66,7 +95,7 @@
     "cta": "Reservar clase"
   },
   "hero": {
-    "eyebrow": "Maspalomas · Gran Canaria",
+    "eyebrow": "Academia de tenis y pádel en Maspalomas",
     "titleLine1": "Tenis los 365 días del año,",
     "titleAccent": "con el mejor clima del mundo.",
     "body": "Una academia de tenis y pádel para todas las edades y niveles. Metodología propia, entrenadores con recorrido internacional y atención personalizada en cada sesión.",

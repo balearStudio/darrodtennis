@@ -5,7 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Schibsted_Grotesk, Instrument_Serif, IBM_Plex_Mono } from "next/font/google";
 import { routing, type Locale } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/site";
-import { buildAlternates, ogBase } from "@/lib/metadata";
+import { buildAlternates, ogBase, twitterBase } from "@/lib/metadata";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import "../globals.css";
@@ -53,7 +53,17 @@ export async function generateMetadata({
     description: t("home.description"),
     applicationName: t("siteName"),
     alternates: buildAlternates(locale, "/"),
-    openGraph: { ...ogBase(locale, "/"), title: t("home.title"), description: t("home.description") },
+    openGraph: {
+      ...ogBase(locale, "/", t("ogAlt")),
+      title: t("home.title"),
+      description: t("home.description"),
+    },
+    twitter: twitterBase(
+      locale,
+      t("home.title"),
+      t("home.description"),
+      t("ogAlt"),
+    ),
     robots: { index: true, follow: true },
   };
 }

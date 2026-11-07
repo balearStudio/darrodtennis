@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
-import { buildAlternates, ogBase } from "@/lib/metadata";
+import { pageMetadata } from "@/lib/metadata";
+import { breadcrumbSchema, personSchema } from "@/lib/schema";
 import { COACHES, coachBySlug, programBySlug } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
 import { PhotoFrame } from "@/components/PhotoFrame";
 import { Reveal } from "@/components/Reveal";
 import { Cta } from "@/components/Cta";
+import { JsonLd } from "@/components/JsonLd";
 
 type Props = { params: Promise<{ locale: Locale; coach: string }> };
 
@@ -21,15 +23,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, coach } = await params;
   const found = coachBySlug(coach);
   if (!found) return {};
-  const t = await getTranslations({ locale, namespace: "team.coaches" });
-  const info = t.raw(coach) as { name: string; role: string };
-  const path = `/equipo/${coach}`;
-  return {
-    title: info.name,
-    description: `${info.name} — ${info.role} · Darrod Tennis Academy`,
-    alternates: buildAlternates(locale, path),
-    openGraph: { ...ogBase(locale, path), title: info.name, description: info.role },
-  };
+  const tteam = await getTranslations({ locale, namespace: "team.coaches" });
+  const tpage = await getTranslations({ locale, namespace: "equipoPage" });
+  const tmeta = await getTranslations({ locale, namespace: "meta" });
+  const info = tteam.raw(coach) as { name: string; role: string };
+  const bio = tpage.raw(`bios.${coach}`) as string;
+  return pageMetadata(
+    locale,
+    `/equipo/${coach}`,
+    `${info.name} — ${info.role}`,
+    `${bio} ${tmeta("coachSuffix")}`,
+  );
 }
 
 export default async function CoachPage({ params }: Props) {
@@ -41,6 +45,8 @@ export default async function CoachPage({ params }: Props) {
   const tteam = await getTranslations("team.coaches");
   const tpage = await getTranslations("equipoPage");
   const tprog = await getTranslations("prog");
+  const tnav = await getTranslations("nav");
+  const tmeta = await getTranslations("meta");
 
   const info = tteam.raw(coach) as { name: string; role: string };
   const bio = tpage.raw(`bios.${coach}`) as string;
@@ -51,6 +57,21 @@ export default async function CoachPage({ params }: Props) {
 
   return (
     <section className="px-side bg-ink-800 pb-24 pt-32 text-cream md:pt-44">
+      <JsonLd
+        data={personSchema(locale, {
+          slug: coach,
+          name: info.name,
+          role: info.role,
+          bio,
+          image: found.image,
+        })}
+      />
+      <JsonLd
+        data={breadcrumbSchema(locale, tmeta("breadcrumbHome"), [
+          { name: tnav("team"), path: "/equipo" },
+          { name: info.name, path: `/equipo/${coach}` },
+        ])}
+      />
       <Link
         href="/equipo"
         className="font-mono text-[11px] uppercase tracking-[0.18em] text-cream/50 transition-colors hover:text-cream"

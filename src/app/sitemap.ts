@@ -27,10 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: localizedUrl(locale, path),
       changeFrequency: "monthly" as const,
       priority: path === "/" ? 1 : 0.7,
+      // Same hreflang set as the pages' <head> (buildAlternates), x-default included.
       alternates: {
-        languages: Object.fromEntries(
-          routing.locales.map((l) => [l, localizedUrl(l, path)]),
-        ),
+        languages: {
+          ...Object.fromEntries(routing.locales.map((l) => [l, localizedUrl(l, path)])),
+          "x-default": localizedUrl(routing.defaultLocale, path),
+        },
       },
     })),
   );

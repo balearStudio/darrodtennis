@@ -9,7 +9,7 @@ export const routing = defineRouting({
   locales,
   defaultLocale,
   // The site is a static export (GitHub Pages) with no middleware to rewrite
-  // `/` -> `/es`, so every locale carries its prefix. `public/index.html`
+  // `/` -> `/es`, so every locale carries its prefix. `scripts/static-redirects.mjs`
   // redirects the bare domain to `/es/`.
   localePrefix: "always",
   // We keep identical pathnames across locales (`/es/programas`,

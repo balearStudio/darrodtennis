@@ -42,3 +42,6 @@ next-env.d.ts
 
 # raw client assets — processed copies live in public/; keep these local only
 /design/uploads/
+
+# Notas internas de trabajo (no se publican)
+TODO.md

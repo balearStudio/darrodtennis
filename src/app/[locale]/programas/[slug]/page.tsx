@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
-import { buildAlternates, ogBase } from "@/lib/metadata";
+import { pageMetadata } from "@/lib/metadata";
+import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { PROGRAMS, programBySlug, COACHES } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
 import { PhotoFrame } from "@/components/PhotoFrame";
 import { Eyebrow } from "@/components/Eyebrow";
 import { Reveal } from "@/components/Reveal";
 import { Cta } from "@/components/Cta";
+import { JsonLd } from "@/components/JsonLd";
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> };
 
@@ -22,15 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const program = programBySlug(slug);
   if (!program) return {};
-  const t = await getTranslations({ locale, namespace: "prog" });
-  const item = t.raw(`items.${program.key}`) as { name: string; summary: string };
-  const path = `/programas/${slug}`;
-  return {
-    title: item.name,
-    description: item.summary,
-    alternates: buildAlternates(locale, path),
-    openGraph: { ...ogBase(locale, path), title: item.name, description: item.summary },
-  };
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return pageMetadata(
+    locale,
+    `/programas/${slug}`,
+    t(`program.${program.key}.title`),
+    t(`program.${program.key}.description`),
+  );
 }
 
 export default async function ProgramDetailPage({ params }: Props) {
@@ -42,6 +42,8 @@ export default async function ProgramDetailPage({ params }: Props) {
   const tp = await getTranslations("prog");
   const t = await getTranslations("programasPage");
   const tteam = await getTranslations("team.coaches");
+  const tnav = await getTranslations("nav");
+  const tmeta = await getTranslations("meta");
 
   const card = tp.raw(`items.${program.key}`) as {
     tag: string;
@@ -58,6 +60,24 @@ export default async function ProgramDetailPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={serviceSchema(
+          locale,
+          {
+            slug: program.slug,
+            name: card.name,
+            description: detail.intro,
+            image: program.image,
+          },
+          tmeta(`program.${program.key}.serviceType`),
+        )}
+      />
+      <JsonLd
+        data={breadcrumbSchema(locale, tmeta("breadcrumbHome"), [
+          { name: tnav("programs"), path: "/programas" },
+          { name: card.name, path: `/programas/${program.slug}` },
+        ])}
+      />
       <section className="px-side bg-ink-800 pb-16 pt-32 text-cream md:pb-20 md:pt-44">
         <Link
           href="/programas"
