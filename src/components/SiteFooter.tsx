@@ -1,12 +1,13 @@
 import { Img } from "@/components/Img";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { CONTACT, telHref, whatsappHref } from "@/lib/site";
+import { CONTACT, STUDIO, telHref, whatsappHref } from "@/lib/site";
 
 export async function SiteFooter() {
   const t = await getTranslations("footer");
   const tn = await getTranslations("nav");
   const tc = await getTranslations("common");
+  const locale = await getLocale();
 
   const columns = [
     {
@@ -125,6 +126,29 @@ export async function SiteFooter() {
               {t("cookies")}
             </Link>
           </div>
+        </div>
+
+        {/* Studio credit. The wordmark copies balearstudio.com's logo: "balear"
+            lowercase/regular, "STUDIO" uppercase/bold, each with its tracking. */}
+        <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-2 text-cream/35">
+          <span className="text-label">{t("madeBy")}</span>
+          <a
+            href={STUDIO.url[locale === "en" ? "en" : "es"]}
+            target="_blank"
+            rel="noopener"
+            aria-label="balearSTUDIO"
+            className="inline-flex items-baseline text-[14px] leading-none text-cream/60 transition-colors hover:text-cream"
+          >
+            <span className="font-normal lowercase tracking-[0.14em]">balear</span>
+            <span className="ml-[0.16em] font-bold uppercase tracking-[0.24em]">studio</span>
+          </a>
+          <span aria-hidden className="text-label">·</span>
+          <a
+            href={`mailto:${STUDIO.email}`}
+            className="text-[13px] transition-colors hover:text-cream"
+          >
+            {STUDIO.email}
+          </a>
         </div>
       </div>
     </footer>

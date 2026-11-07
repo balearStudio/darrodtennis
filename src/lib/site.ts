@@ -23,6 +23,12 @@ export const CONTACT = {
   country: "ES",
 };
 
+/** The studio that designed and built the site, credited in the footer. */
+export const STUDIO = {
+  email: "info@balearstudio.com",
+  url: { es: "https://balearstudio.com/", en: "https://balearstudio.com/en/" },
+};
+
 /** `tel:` href with spaces stripped; empty string when no number is set. */
 export const telHref = CONTACT.phone
   ? `tel:${CONTACT.phone.replace(/\s+/g, "")}`
