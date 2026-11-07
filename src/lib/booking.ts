@@ -57,8 +57,13 @@ const COACHING_SLOTS = ["09:00", "16:00"];
 
 export const isMorning = (time: string) => Number(time.slice(0, 2)) < 13;
 
-/** Academy opening days — closed on Sunday. */
-export const isOpenDay = (date: Date) => date.getDay() !== 0;
+/**
+ * Weekdays the academy is closed (0 = Sunday … 6 = Saturday). Empty: open
+ * every day of the week, Sunday included.
+ */
+const CLOSED_WEEKDAYS: number[] = [];
+
+export const isOpenDay = (date: Date) => !CLOSED_WEEKDAYS.includes(date.getDay());
 
 /** Small deterministic PRNG so availability never shifts between renders. */
 function pseudo(seed: number) {
