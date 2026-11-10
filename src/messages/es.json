@@ -251,7 +251,6 @@
       "fieldComment": "Comentario",
       "commentPlaceholder": "Nivel, edad, si viajáis en grupo, material que necesitáis…",
       "optional": "opcional",
-      "consent": "He leído y acepto la política de privacidad.",
       "required": "Este campo es obligatorio.",
       "invalidEmail": "Introduce un correo electrónico válido.",
       "acceptTerms": "Debes aceptar la política de privacidad.",
@@ -318,12 +317,11 @@
     "scheduleOptions": { "morning": "Mañana", "afternoon": "Tarde" },
     "message": "Más información",
     "messagePlaceholder": "Cuéntanos lo que necesitemos saber.",
-    "terms": "He leído y acepto los términos y condiciones legales.",
     "submit": "Enviar",
     "choose": "Selecciona una opción",
     "required": "Este campo es obligatorio.",
     "invalidEmail": "Introduce un correo electrónico válido.",
-    "acceptTerms": "Debes aceptar los términos y condiciones.",
+    "acceptTerms": "Debes aceptar la política de privacidad.",
     "successTitle": "Gracias.",
     "successBody": "Hemos recibido tus datos y te responderemos lo antes posible.",
     "sending": "Enviando…",
@@ -460,35 +458,106 @@
     "locationLabel": "Dónde estamos"
   },
   "legal": {
-    "disclaimer": "Texto orientativo. Antes de publicar el sitio, revísalo y complétalo con asesoría legal y con los datos reales del titular.",
-    "lastUpdated": "Última actualización: agosto de 2026",
+    "lastUpdated": "Última actualización: noviembre de 2026",
+    "consent": "He leído y acepto la <link>política de privacidad</link>.",
+    "formNote": "Responsable: {name} · Finalidad: responder a tu solicitud y organizar tus clases · Base legal: tu petición y tu consentimiento · Destinatarios: no cedemos tus datos; solo los tratan nuestros proveedores de formularios, correo y alojamiento · Derechos: acceso, rectificación, supresión y los demás que explicamos en la <link>política de privacidad</link>.",
     "avisoLegal": {
       "title": "Aviso legal",
       "sections": [
-        { "heading": "Titular del sitio", "body": "[Razón social / nombre] — [NIF/CIF] — [Domicilio], Maspalomas, Gran Canaria. Correo de contacto: darrodtennisacademy@gmail.com." },
-        { "heading": "Objeto", "body": "Este sitio web tiene como finalidad informar sobre los servicios de la academia de tenis y pádel Darrod Tennis Academy y permitir la solicitud de clases e información." },
-        { "heading": "Condiciones de uso", "body": "El acceso a este sitio implica la aceptación de las presentes condiciones. El usuario se compromete a hacer un uso adecuado de los contenidos y a no emplearlos para actividades ilícitas." },
-        { "heading": "Propiedad intelectual", "body": "Los textos, imágenes, marcas y logotipos de este sitio pertenecen a sus titulares y no pueden reproducirse sin autorización." },
-        { "heading": "Responsabilidad", "body": "El titular no se hace responsable de los daños derivados del uso indebido del sitio ni de las interrupciones del servicio ajenas a su control." }
+        {
+          "heading": "Titular del sitio",
+          "body": "En cumplimiento del artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI-CE), te informamos de que este sitio web pertenece a:\n{name}\nNIF: {nif}\nDomicilio social: {address}\nCorreo electrónico: {email}"
+        },
+        {
+          "heading": "Objeto",
+          "body": "Este sitio informa sobre los servicios de la academia de tenis y pádel Darrod Tennis Academy y permite solicitar clases y pedir información. El sitio ha sido diseñado y desarrollado por balearSTUDIO (balearstudio.com)."
+        },
+        {
+          "heading": "Condiciones de uso",
+          "body": "El acceso al sitio es gratuito y no requiere registro. Al usarlo te comprometes a hacerlo de buena fe y conforme a la ley, y a no emplear sus contenidos para fines ilícitos o que puedan dañar a la academia o a terceros. Cuando nos envías datos personales a través de un formulario, los tratamos como se explica en la política de privacidad."
+        },
+        {
+          "heading": "Propiedad intelectual e industrial",
+          "body": "Los textos, fotografías, vídeos, logotipos y el diseño de este sitio pertenecen a {name} o a terceros que han autorizado su uso. No se pueden reproducir, distribuir ni modificar sin autorización expresa, salvo para uso personal y privado."
+        },
+        {
+          "heading": "Enlaces a otros sitios",
+          "body": "Este sitio incluye enlaces a sitios de terceros, como Instagram. No controlamos su contenido ni respondemos de él; cada uno tiene sus propias condiciones y su propia política de privacidad."
+        },
+        {
+          "heading": "Responsabilidad",
+          "body": "Procuramos que la información del sitio sea correcta y esté actualizada, pero puede contener errores u omisiones. Los horarios, plazas y servicios se confirman siempre por correo electrónico. No respondemos de los daños derivados de un uso indebido del sitio ni de interrupciones del servicio ajenas a nuestro control."
+        },
+        {
+          "heading": "Legislación aplicable",
+          "body": "Este aviso legal se rige por la legislación española."
+        }
       ]
     },
     "privacidad": {
       "title": "Política de privacidad",
       "sections": [
-        { "heading": "Responsable del tratamiento", "body": "[Razón social / nombre], con domicilio en [Domicilio], Maspalomas, Gran Canaria. Correo: darrodtennisacademy@gmail.com." },
-        { "heading": "Datos que tratamos", "body": "Los que facilitas en los formularios de contacto e inscripción: nombre, teléfono, correo, ciudad y país, edad, nivel, fechas y preferencias de horario, además del mensaje que nos envíes." },
-        { "heading": "Finalidad", "body": "Atender tu solicitud de información o de clases, gestionar la relación con el alumnado y, en su caso, enviarte comunicaciones sobre la actividad de la academia." },
-        { "heading": "Legitimación", "body": "El consentimiento que prestas al enviar el formulario y la ejecución de la relación contractual cuando te inscribes en un programa." },
-        { "heading": "Conservación", "body": "Conservamos los datos mientras dure la relación y, después, durante los plazos legales aplicables." },
-        { "heading": "Derechos", "body": "Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a darrodtennisacademy@gmail.com." }
+        {
+          "heading": "Responsable del tratamiento",
+          "body": "{name}\nNIF: {nif}\nDomicilio social: {address}\nCorreo electrónico: {email}"
+        },
+        {
+          "heading": "Qué datos tratamos",
+          "body": "Solo los que nos facilitas tú:\n• Al solicitar una clase: nombre y apellidos, correo electrónico, país, teléfono, tipo de clase, número de jugadores, los días y horas que prefieres y, si lo añades, un comentario.\n• En el formulario de contacto: nombre, teléfono, correo electrónico, ciudad y país y, si los indicas, edad, nivel, fecha de inicio, horario, tiempo estimado y un mensaje.\n• Si nos escribes por correo electrónico o WhatsApp: los datos que incluyas en tu mensaje.\nNo te pedimos datos especialmente protegidos, como los de salud; te rogamos que no los incluyas en los comentarios."
+        },
+        {
+          "heading": "Menores",
+          "body": "Muchas de nuestras clases son para niños y jóvenes. Si el alumno tiene menos de 14 años, la solicitud debe enviarla su madre, padre o tutor legal, que es quien da el consentimiento. A partir de los 14 años, el alumno puede facilitar sus propios datos."
+        },
+        {
+          "heading": "Para qué usamos tus datos",
+          "body": "Para responder a tu solicitud o consulta, organizar y confirmar tus clases (también las del servicio Luxury Tennis en hoteles) y, si te apuntas, gestionar tu relación con la academia. No elaboramos perfiles ni tomamos decisiones automatizadas, y no te enviaremos publicidad salvo que nos lo pidas expresamente."
+        },
+        {
+          "heading": "Base legal",
+          "body": "Tratamos tus datos porque nos lo pides: para responder a tu solicitud y preparar la clase aplicamos medidas precontractuales a petición tuya (artículo 6.1.b del RGPD), y lo hacemos con el consentimiento que das al enviar el formulario (artículo 6.1.a). Si contratas una clase, la base es la ejecución de ese contrato y el cumplimiento de nuestras obligaciones legales, por ejemplo fiscales (artículo 6.1.c)."
+        },
+        {
+          "heading": "Cuánto tiempo los conservamos",
+          "body": "Mientras atendemos tu solicitud. Si no llegas a contratar ninguna clase, eliminamos tus datos como máximo un año después de nuestro último contacto. Si te apuntas, los conservamos mientras dure tu relación con la academia y, después, durante los plazos que exige la ley, como los fiscales y contables."
+        },
+        {
+          "heading": "Quién más trata tus datos",
+          "body": "No cedemos tus datos a terceros, salvo obligación legal. Para que la web funcione usamos proveedores que los tratan solo por nuestra cuenta:\n• Web3Forms, que recibe los formularios de la web y nos los reenvía por correo electrónico.\n• Google (Gmail), donde recibimos y gestionamos el correo de la academia.\n• GitHub, que aloja la web y, como cualquier servidor, registra datos técnicos de las visitas, como la dirección IP.\nAlgunos de estos proveedores pueden tratar datos fuera del Espacio Económico Europeo, por ejemplo en Estados Unidos. En ese caso, la transferencia se ampara en las garantías que prevé el RGPD, como el Marco de Privacidad de Datos UE-EE. UU. o las cláusulas contractuales tipo de la Comisión Europea."
+        },
+        {
+          "heading": "Cookies",
+          "body": "Esta web no usa cookies ni herramientas de analítica o de publicidad. Tienes más detalles en la política de cookies."
+        },
+        {
+          "heading": "Tus derechos",
+          "body": "Puedes pedirnos acceder a tus datos, rectificarlos o suprimirlos, oponerte a su tratamiento o limitarlo, solicitar su portabilidad y retirar tu consentimiento en cualquier momento, sin que eso afecte a lo tratado antes. Escríbenos a {email} indicando qué derecho quieres ejercer; si hace falta, te pediremos que acredites tu identidad.\nSi crees que no hemos tratado bien tus datos, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+        },
+        {
+          "heading": "Cambios en esta política",
+          "body": "Si la modificamos, publicaremos aquí la nueva versión con su fecha de actualización."
+        }
       ]
     },
     "cookies": {
       "title": "Política de cookies",
       "sections": [
-        { "heading": "Qué son las cookies", "body": "Pequeños archivos que un sitio web guarda en tu navegador para recordar información sobre tu visita." },
-        { "heading": "Cookies que usamos", "body": "Este sitio es estático y no utiliza cookies de analítica ni de publicidad. Solo se usan las estrictamente necesarias para recordar el idioma seleccionado." },
-        { "heading": "Gestión", "body": "Puedes bloquear o eliminar las cookies desde la configuración de tu navegador. Si lo haces, es posible que el sitio no recuerde tu idioma." }
+        {
+          "heading": "Qué son las cookies",
+          "body": "Pequeños archivos que un sitio web guarda en tu navegador para recordar información sobre tu visita."
+        },
+        {
+          "heading": "Cookies que usamos",
+          "body": "Ninguna. Esta web no instala cookies ni usa herramientas de analítica, de publicidad o de redes sociales que las instalen, y tampoco guarda otra información en tu navegador. Por eso no te pedimos que aceptes cookies."
+        },
+        {
+          "heading": "Enlaces a otros sitios",
+          "body": "Los enlaces a Instagram te llevan a esa red social, que tiene su propia política de cookies."
+        },
+        {
+          "heading": "Si esto cambia",
+          "body": "Si en el futuro añadimos cookies que no sean estrictamente necesarias, te pediremos permiso antes de instalarlas y actualizaremos esta política."
+        }
       ]
     }
   },

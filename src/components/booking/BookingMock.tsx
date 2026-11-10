@@ -24,6 +24,7 @@ import {
   localisedCountries,
 } from "@/lib/countries";
 import { sendBookingRequest } from "@/lib/bookingRequest";
+import { DataProtectionNote, PrivacyConsentText } from "@/components/forms/PrivacyText";
 import { CONTACT } from "@/lib/site";
 
 type Props = {
@@ -641,12 +642,13 @@ export function BookingMock({ compact = false }: Props) {
                     }}
                   />
                   <span>
-                    {t("consent")}
+                    <PrivacyConsentText />
                     {errors.consent ? (
                       <span className="mt-1 block text-clay">{errors.consent}</span>
                     ) : null}
                   </span>
                 </label>
+                <DataProtectionNote tone="dark" />
               </div>
             </fieldset>
 

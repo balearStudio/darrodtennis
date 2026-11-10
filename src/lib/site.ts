@@ -23,6 +23,17 @@ export const CONTACT = {
   country: "ES",
 };
 
+/**
+ * The company behind the site, for the legal notice, the privacy policy and the
+ * note under each form. Taken from the old site's legal notice (Nov 2026).
+ * The registered address is the old club's: confirm with the client.
+ */
+export const LEGAL = {
+  name: "Darrod Tennis Academy S.L.",
+  nif: "B01712488",
+  address: "Sun Club Tennis Playa del Inglés, Avda. de Gran Canaria 118, 35100 Maspalomas, Las Palmas",
+};
+
 /** The studio that designed and built the site, credited in the footer. */
 export const STUDIO = {
   email: "info@balearstudio.com",

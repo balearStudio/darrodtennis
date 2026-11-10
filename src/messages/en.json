@@ -251,7 +251,6 @@
       "fieldComment": "Comment",
       "commentPlaceholder": "Level, age, whether you are travelling as a group, kit you need…",
       "optional": "optional",
-      "consent": "I have read and accept the privacy policy.",
       "required": "This field is required.",
       "invalidEmail": "Enter a valid email address.",
       "acceptTerms": "You must accept the privacy policy.",
@@ -318,12 +317,11 @@
     "scheduleOptions": { "morning": "Morning", "afternoon": "Afternoon" },
     "message": "Anything else",
     "messagePlaceholder": "Tell us anything we should know.",
-    "terms": "I have read and accept the legal terms and conditions.",
     "submit": "Send",
     "choose": "Select an option",
     "required": "This field is required.",
     "invalidEmail": "Enter a valid email address.",
-    "acceptTerms": "You must accept the terms and conditions.",
+    "acceptTerms": "You must accept the privacy policy.",
     "successTitle": "Thank you.",
     "successBody": "We have received your details and will reply as soon as possible.",
     "sending": "Sending…",
@@ -460,35 +458,106 @@
     "locationLabel": "Where we are"
   },
   "legal": {
-    "disclaimer": "Guidance text. Before publishing the site, review and complete it with legal advice and the owner's real details.",
-    "lastUpdated": "Last updated: August 2026",
+    "lastUpdated": "Last updated: November 2026",
+    "consent": "I have read and accept the <link>privacy policy</link>.",
+    "formNote": "Controller: {name} · Purpose: to answer your request and organise your lessons · Legal basis: your request and your consent · Recipients: we do not share your data; only our form, email and hosting providers process it · Rights: access, rectification, erasure and the others set out in the <link>privacy policy</link>.",
     "avisoLegal": {
       "title": "Legal notice",
       "sections": [
-        { "heading": "Site owner", "body": "[Company / name] — [Tax ID] — [Address], Maspalomas, Gran Canaria. Contact email: darrodtennisacademy@gmail.com." },
-        { "heading": "Purpose", "body": "This website exists to provide information about the services of the Darrod Tennis Academy tennis and padel academy and to allow lesson and information requests." },
-        { "heading": "Terms of use", "body": "Access to this site implies acceptance of these terms. Users agree to make appropriate use of the content and not to use it for unlawful activities." },
-        { "heading": "Intellectual property", "body": "The texts, images, trademarks and logos on this site belong to their owners and may not be reproduced without authorisation." },
-        { "heading": "Liability", "body": "The owner is not responsible for damage arising from misuse of the site or from service interruptions beyond its control." }
+        {
+          "heading": "Site owner",
+          "body": "In accordance with article 10 of Spanish Law 34/2002 on information society services and e-commerce (LSSI-CE), this website belongs to:\n{name}\nTax ID (NIF): {nif}\nRegistered address: {address}\nEmail: {email}"
+        },
+        {
+          "heading": "Purpose",
+          "body": "This site provides information about the services of the Darrod Tennis Academy tennis and padel academy and lets you request lessons and information. The site was designed and built by balearSTUDIO (balearstudio.com)."
+        },
+        {
+          "heading": "Terms of use",
+          "body": "Access to the site is free and requires no registration. By using it you agree to do so in good faith and in accordance with the law, and not to use its content for unlawful purposes or in ways that could harm the academy or third parties. When you send us personal data through a form, we process it as described in the privacy policy."
+        },
+        {
+          "heading": "Intellectual and industrial property",
+          "body": "The text, photographs, videos, logos and design of this site belong to {name} or to third parties who have authorised their use. They may not be reproduced, distributed or modified without express permission, except for personal and private use."
+        },
+        {
+          "heading": "Links to other sites",
+          "body": "This site links to third-party sites such as Instagram. We do not control or take responsibility for their content; each has its own terms and privacy policy."
+        },
+        {
+          "heading": "Liability",
+          "body": "We aim to keep the information on this site accurate and up to date, but it may contain errors or omissions. Times, places and services are always confirmed by email. We are not liable for damage arising from misuse of the site or from service interruptions beyond our control."
+        },
+        {
+          "heading": "Governing law",
+          "body": "This legal notice is governed by Spanish law."
+        }
       ]
     },
     "privacidad": {
       "title": "Privacy policy",
       "sections": [
-        { "heading": "Data controller", "body": "[Company / name], with registered address at [Address], Maspalomas, Gran Canaria. Email: darrodtennisacademy@gmail.com." },
-        { "heading": "Data we process", "body": "The data you provide in the contact and enquiry forms: name, phone, email, city and country, age, level, dates and time preferences, plus any message you send us." },
-        { "heading": "Purpose", "body": "To answer your information or lesson request, manage the relationship with students and, where applicable, send you updates about the academy's activity." },
-        { "heading": "Legal basis", "body": "The consent you give when submitting the form, and the performance of the contract when you enrol in a programme." },
-        { "heading": "Retention", "body": "We keep the data for as long as the relationship lasts and, afterwards, for the applicable legal periods." },
-        { "heading": "Your rights", "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to darrodtennisacademy@gmail.com." }
+        {
+          "heading": "Data controller",
+          "body": "{name}\nTax ID (NIF): {nif}\nRegistered address: {address}\nEmail: {email}"
+        },
+        {
+          "heading": "What data we process",
+          "body": "Only what you give us:\n• When you request a lesson: full name, email, country, phone, type of lesson, number of players, the days and times you would like and, if you add one, a comment.\n• In the contact form: name, phone, email, city and country and, if you fill them in, age, level, start date, preferred time of day, expected duration and a message.\n• If you write to us by email or WhatsApp: whatever you include in your message.\nWe do not ask for special categories of data, such as health data; please do not include them in comments."
+        },
+        {
+          "heading": "Minors",
+          "body": "Many of our lessons are for children and teenagers. If the player is under 14, the request must be sent by their mother, father or legal guardian, who gives consent. From 14, players can provide their own details."
+        },
+        {
+          "heading": "What we use your data for",
+          "body": "To answer your request or enquiry, organise and confirm your lessons (including the Luxury Tennis in-hotel service) and, if you sign up, manage your relationship with the academy. We do not profile you or make automated decisions, and we will not send you marketing unless you expressly ask us to."
+        },
+        {
+          "heading": "Legal basis",
+          "body": "We process your data because you ask us to: answering your request and preparing the lesson are pre-contractual steps taken at your request (article 6.1.b GDPR), and we do so with the consent you give when you send the form (article 6.1.a). If you book a lesson, the basis is performing that contract and meeting our legal obligations, such as tax obligations (article 6.1.c)."
+        },
+        {
+          "heading": "How long we keep it",
+          "body": "While we handle your request. If you do not go on to book any lesson, we delete your data no later than one year after our last contact. If you sign up, we keep it for as long as you are with the academy and, afterwards, for the periods required by law, such as tax and accounting periods."
+        },
+        {
+          "heading": "Who else processes your data",
+          "body": "We do not share your data with third parties unless the law requires it. To run the site we use providers that process it only on our behalf:\n• Web3Forms, which receives the site's forms and forwards them to us by email.\n• Google (Gmail), where we receive and manage the academy's email.\n• GitHub, which hosts the site and, like any web server, logs technical data about visits, such as IP addresses.\nSome of these providers may process data outside the European Economic Area, for example in the United States. Where they do, the transfer relies on the safeguards provided for in the GDPR, such as the EU-US Data Privacy Framework or the European Commission's standard contractual clauses."
+        },
+        {
+          "heading": "Cookies",
+          "body": "This site does not use cookies or any analytics or advertising tools. See the cookie policy for details."
+        },
+        {
+          "heading": "Your rights",
+          "body": "You can ask us to access, rectify or erase your data, object to or restrict its processing, request its portability, and withdraw your consent at any time, without affecting processing carried out before. Email us at {email} saying which right you want to exercise; if needed, we will ask you to prove your identity.\nIf you think we have not handled your data properly, you can complain to the Spanish Data Protection Agency (www.aepd.es)."
+        },
+        {
+          "heading": "Changes to this policy",
+          "body": "If we change it, we will publish the new version here with its update date."
+        }
       ]
     },
     "cookies": {
       "title": "Cookie policy",
       "sections": [
-        { "heading": "What cookies are", "body": "Small files that a website stores in your browser to remember information about your visit." },
-        { "heading": "Cookies we use", "body": "This site is static and uses no analytics or advertising cookies. Only strictly necessary storage is used, to remember your selected language." },
-        { "heading": "Managing cookies", "body": "You can block or delete cookies from your browser settings. If you do, the site may not remember your language." }
+        {
+          "heading": "What cookies are",
+          "body": "Small files a website stores in your browser to remember information about your visit."
+        },
+        {
+          "heading": "Cookies we use",
+          "body": "None. This site sets no cookies, uses no analytics, advertising or social media tools that would set them, and stores nothing else in your browser. That is why we do not ask you to accept cookies."
+        },
+        {
+          "heading": "Links to other sites",
+          "body": "Links to Instagram take you to that social network, which has its own cookie policy."
+        },
+        {
+          "heading": "If this changes",
+          "body": "If we ever add cookies that are not strictly necessary, we will ask for your permission before setting them and update this policy."
+        }
       ]
     }
   },

@@ -15,4 +15,7 @@ export const routing = defineRouting({
   // We keep identical pathnames across locales (`/es/programas`,
   // `/en/programas`) so switching language always preserves the current path.
   localeDetection: false,
+  // The language toggle would otherwise set a NEXT_LOCALE cookie that nothing
+  // reads (no middleware on a static export). Off, the site sets no cookies.
+  localeCookie: false,
 });

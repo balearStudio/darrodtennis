@@ -24,7 +24,6 @@ export default async function CookiesPage({ params }: Props) {
     <LegalPage
       title={data.title}
       sections={data.sections}
-      disclaimer={t("disclaimer")}
       lastUpdated={t("lastUpdated")}
     />
   );

@@ -3,6 +3,7 @@
 import { useId, useState, type ReactNode } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { sendEnquiry } from "@/lib/bookingRequest";
+import { DataProtectionNote, PrivacyConsentText } from "@/components/forms/PrivacyText";
 import { CONTACT } from "@/lib/site";
 
 type Tone = "cream" | "dark";
@@ -257,12 +258,13 @@ export function EnquiryForm({ tone = "cream" }: { tone?: Tone }) {
             }}
           />
           <span>
-            {t("terms")}
+            <PrivacyConsentText />
             {errors.terms ? (
               <span className="mt-1 block text-clay">{errors.terms}</span>
             ) : null}
           </span>
         </label>
+        <DataProtectionNote tone={dark ? "dark" : "cream"} />
 
         {status === "error" ? (
           <div role="alert" className="border-l-2 border-clay pl-4">
