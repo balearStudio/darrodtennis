@@ -324,7 +324,9 @@
     "acceptTerms": "Debes aceptar los términos y condiciones.",
     "successTitle": "Gracias.",
     "successBody": "Hemos recibido tus datos y te responderemos lo antes posible.",
-    "demoNote": "Formulario de demostración: los datos aún no se envían a ningún servidor."
+    "sending": "Enviando…",
+    "errorTitle": "No hemos podido enviar tu mensaje",
+    "errorBody": "Inténtalo de nuevo o escríbenos directamente a {email}."
   },
   "programasPage": {
     "eyebrow": "Programas",

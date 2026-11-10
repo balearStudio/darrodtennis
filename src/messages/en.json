@@ -324,7 +324,9 @@
     "acceptTerms": "You must accept the terms and conditions.",
     "successTitle": "Thank you.",
     "successBody": "We have received your details and will reply as soon as possible.",
-    "demoNote": "Demo form: submissions are not sent to a server yet."
+    "sending": "Sending…",
+    "errorTitle": "We could not send your message",
+    "errorBody": "Please try again, or email us directly at {email}."
   },
   "programasPage": {
     "eyebrow": "Programmes",

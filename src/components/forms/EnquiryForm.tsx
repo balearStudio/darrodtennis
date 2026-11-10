@@ -1,7 +1,9 @@
 "use client";
 
 import { useId, useState, type ReactNode } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { sendEnquiry } from "@/lib/bookingRequest";
+import { CONTACT } from "@/lib/site";
 
 type Tone = "cream" | "dark";
 
@@ -9,10 +11,13 @@ const REQUIRED_FIELDS = ["name", "phone", "email", "cityCountry"] as const;
 
 export function EnquiryForm({ tone = "cream" }: { tone?: Tone }) {
   const t = useTranslations("form");
+  const locale = useLocale();
   const [values, setValues] = useState<Record<string, string>>({});
   const [accepted, setAccepted] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [done, setDone] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
+    "idle",
+  );
 
   const dark = tone === "dark";
   const labelCls = `block font-mono text-[10.5px] uppercase tracking-[0.16em] ${
@@ -41,14 +46,33 @@ export function EnquiryForm({ tone = "cream" }: { tone?: Tone }) {
     return Object.keys(next).length === 0;
   }
 
-  function onSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    // Static site (GitHub Pages): no server. Validate and show the success
-    // state — wire a real handler (Formspree / API) here later.
-    if (validate()) setDone(true);
+  /** Label of a chosen <select> option, as the visitor saw it. */
+  function optionLabel(group: string, key: string) {
+    const value = values[key];
+    return value ? t(`${group}.${value}`) : "";
   }
 
-  if (done) {
+  async function onSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (status === "sending" || !validate()) return;
+    setStatus("sending");
+    const outcome = await sendEnquiry({
+      locale,
+      name: values.name ?? "",
+      phone: values.phone ?? "",
+      email: values.email ?? "",
+      cityCountry: values.cityCountry ?? "",
+      age: values.age ?? "",
+      level: optionLabel("levelOptions", "level"),
+      start: values.start ?? "",
+      schedule: optionLabel("scheduleOptions", "schedule"),
+      duration: optionLabel("durationOptions", "duration"),
+      message: values.message ?? "",
+    });
+    setStatus(outcome.ok ? "sent" : "error");
+  }
+
+  if (status === "sent") {
     return (
       <div className={`max-w-[520px] ${dark ? "text-cream" : "text-ink-800"}`}>
         <h3 className="text-h3">{t("successTitle")}</h3>
@@ -56,13 +80,6 @@ export function EnquiryForm({ tone = "cream" }: { tone?: Tone }) {
           className={`mt-3 text-body ${dark ? "text-cream/65" : "text-slate"}`}
         >
           {t("successBody")}
-        </p>
-        <p
-          className={`mt-6 font-mono text-[10.5px] uppercase tracking-[0.14em] ${
-            dark ? "text-cream/40" : "text-muted"
-          }`}
-        >
-          {t("demoNote")}
         </p>
       </div>
     );
@@ -247,20 +264,33 @@ export function EnquiryForm({ tone = "cream" }: { tone?: Tone }) {
           </span>
         </label>
 
+        {status === "error" ? (
+          <div role="alert" className="border-l-2 border-clay pl-4">
+            <div className={`text-[14.5px] ${dark ? "text-cream" : "text-ink-800"}`}>
+              {t("errorTitle")}
+            </div>
+            <p
+              className={`mt-1 text-[13.5px] leading-[1.6] ${
+                dark ? "text-cream/70" : "text-slate"
+              }`}
+            >
+              {t("errorBody", { email: CONTACT.email })}
+            </p>
+          </div>
+        ) : null}
+
         <div>
           <button
             type="submit"
-            className="rounded-[2px] bg-clay px-8 py-4 text-sm tracking-[0.02em] text-cream transition-colors hover:bg-clay-hover"
-          >
-            {t("submit")}
-          </button>
-          <p
-            className={`mt-5 font-mono text-[10.5px] uppercase tracking-[0.14em] ${
-              dark ? "text-cream/35" : "text-muted"
+            disabled={status === "sending"}
+            className={`rounded-[2px] px-8 py-4 text-sm tracking-[0.02em] transition-colors ${
+              status === "sending"
+                ? "cursor-wait bg-clay/50 text-cream/70"
+                : "bg-clay text-cream hover:bg-clay-hover"
             }`}
           >
-            {t("demoNote")}
-          </p>
+            {status === "sending" ? t("sending") : t("submit")}
+          </button>
         </div>
       </div>
     </form>
