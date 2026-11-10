@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { pageMetadata } from "@/lib/metadata";
 import { breadcrumbSchema, personSchema } from "@/lib/schema";
-import { COACHES, coachBySlug, programBySlug } from "@/lib/content";
+import { COACHES, coachBySlug } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
 import { PhotoFrame } from "@/components/PhotoFrame";
 import { Reveal } from "@/components/Reveal";
@@ -44,16 +44,11 @@ export default async function CoachPage({ params }: Props) {
 
   const tteam = await getTranslations("team.coaches");
   const tpage = await getTranslations("equipoPage");
-  const tprog = await getTranslations("prog");
   const tnav = await getTranslations("nav");
   const tmeta = await getTranslations("meta");
 
   const info = tteam.raw(coach) as { name: string; role: string };
   const bio = tpage.raw(`bios.${coach}`) as string;
-  const program = found.programSlug ? programBySlug(found.programSlug) : undefined;
-  const programName = program
-    ? (tprog.raw(`items.${program.key}`) as { name: string }).name
-    : null;
 
   return (
     <section className="px-side bg-ink-800 pb-24 pt-32 text-cream md:pt-44">
@@ -97,20 +92,6 @@ export default async function CoachPage({ params }: Props) {
             {info.role}
           </div>
           <p className="mt-8 max-w-[48ch] text-body text-cream/70">{bio}</p>
-
-          {programName && program ? (
-            <div className="mt-10 border-t border-cream/15 pt-6">
-              <div className="text-label text-cream/45">
-                {tpage("coachProgramLabel")}
-              </div>
-              <Link
-                href={`/programas/${program.slug}`}
-                className="mt-2 inline-block border-b border-cream/30 pb-1 text-[17px] transition-colors hover:border-clay"
-              >
-                {programName}
-              </Link>
-            </div>
-          ) : null}
 
           <div className="mt-10">
             <Cta href="/reservar" variant="primary">

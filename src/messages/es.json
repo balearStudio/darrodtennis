@@ -29,7 +29,7 @@
     },
     "equipo": {
       "title": "Entrenadores de tenis y pádel en Maspalomas",
-      "description": "Conoce al equipo de Darrod Tennis Academy: cinco entrenadores titulados de tenis y pádel con recorrido internacional y una metodología común, en Maspalomas."
+      "description": "Conoce al equipo de Darrod Tennis Academy: entrenadores titulados de tenis y pádel con recorrido internacional y una metodología común, en Maspalomas."
     },
     "reservar": {
       "title": "Reserva tu clase de tenis en Maspalomas",
@@ -44,7 +44,7 @@
       "description": "Gran Canaria acoge más de nueve torneos internacionales de tenis cada temporada. Acompañamos a nuestros jugadores en el calendario local, nacional e internacional."
     },
     "hoteles": {
-      "title": "Clases de tenis en tu hotel de Maspalomas",
+      "title": "Luxury Tennis: clases de tenis en tu hotel",
       "description": "Clases de tenis durante tus vacaciones en Maspalomas: un entrenador de la academia acude a la pista de tu hotel a la hora acordada. Servicio con coste adicional."
     },
     "contacto": {
@@ -97,15 +97,15 @@
     "cta1": "Reservar una clase",
     "cta2": "Ver programas",
     "stats": [
-      { "value": "4", "label": "Pistas · tierra y rápida" },
-      { "value": "5", "label": "Entrenadores titulados" },
-      { "value": "9+", "label": "Torneos internacionales" },
-      { "value": "1–4", "label": "Jugadores por clase" }
+      { "value": "365", "label": "Días al año" },
+      { "value": "8–21 h", "label": "Clases todo el día" },
+      { "value": "1–4", "label": "Jugadores por clase" },
+      { "value": "9+", "label": "Torneos internacionales" }
     ]
   },
   "phil": {
     "eyebrow": "Nuestra filosofía",
-    "title": "Una metodología, cinco entrenadores, un plan para cada jugador.",
+    "title": "Una metodología, un equipo, un plan para cada jugador.",
     "body": "Todos los entrenadores de Darrod utilizan la misma metodología, diseñada exclusivamente por la academia. Durante su formación, nuestros jugadores entrenan con distintos entrenadores: cada profesional aporta algo personal al proceso y enriquece el juego.",
     "principles": [
       {
@@ -186,10 +186,10 @@
     "portraitPending": "Retrato pendiente",
     "coaches": {
       "daniel-rodriguez": { "name": "Daniel Rodríguez", "role": "Director · Head Coach" },
-      "daniel-gonzalez": { "name": "Daniel González", "role": "Entrenador · Competición" },
-      "laurent-dairiam": { "name": "Laurent Dairiam", "role": "Entrenador · Tennis Pro" },
-      "javier-anibal": { "name": "Javier Aníbal", "role": "Entrenador · Junior" },
-      "alberto-ottchota": { "name": "Alberto Ottchota", "role": "Entrenador · Pádel" }
+      "daniel-gonzalez": { "name": "Daniel González", "role": "Head Coach" },
+      "laurent-dairiam": { "name": "Laurent Dairiam", "role": "Head Coach" },
+      "javier-anibal": { "name": "Javier Aníbal", "role": "Preparador físico" },
+      "alberto-ottchota": { "name": "Alberto Ottchota", "role": "Head Coach · Pádel" }
     }
   },
   "book": {
@@ -232,7 +232,7 @@
       "closedDay": "La academia no abre este día.",
       "morning": "Mañana",
       "afternoon": "Tarde",
-      "multiHint": "Elige todas las horas que quieras: cada una se añade a tu solicitud. Puedes combinar varios días.",
+      "multiHint": "Elige las horas que prefieras: cada una se añade a tu solicitud y puedes combinar varios días. El horario es orientativo: nos adaptamos a tu preferencia en lo posible y te confirmamos la hora por email.",
       "selectedTitle": "Sesiones solicitadas",
       "selectedEmpty": "Todavía no has añadido ninguna sesión.",
       "removeSession": "Quitar {day} a las {time}",
@@ -283,7 +283,7 @@
     "colServices": "Servicios",
     "colContact": "Contacto",
     "linkPhilosophy": "Filosofía",
-    "linkHotels": "Servicio en hoteles",
+    "linkHotels": "Luxury Tennis",
     "linkStays": "Estancias y campus",
     "collabLabel": "Colaboramos con",
     "rights": "© 2026 Darrod Tennis Academy",
@@ -334,7 +334,6 @@
     "cta": "Reservar una clase",
     "detailBack": "Todos los programas",
     "worksOnLabel": "Qué trabajamos",
-    "coachesLabel": "Entrenadores",
     "formatLabel": "Formato",
     "items": {
       "junior": {
@@ -392,15 +391,14 @@
         "body": "Los programas buscan mejorar el juego en un entorno de entrenamiento exigente, trabajando también la independencia y el manejo de la presión."
       }
     ],
-    "coachProgramLabel": "Programa",
     "coachBackLabel": "Todo el equipo",
     "coachCta": "Reservar una clase",
     "bios": {
       "daniel-rodriguez": "Director de la academia y responsable de la metodología Darrod. Coordina al equipo de entrenadores y el seguimiento de los jugadores de competición.",
-      "daniel-gonzalez": "Entrenador del área de competición. Trabaja las estrategias de partido, los patrones de juego y la preparación para torneos.",
-      "laurent-dairiam": "Entrenador del programa Tennis Pro. Se centra en las variantes de efectos, la táctica y la lectura del rival.",
-      "javier-anibal": "Entrenador del programa Junior. Construye la técnica desde los apoyos y acompaña los primeros pasos en la competición.",
-      "alberto-ottchota": "Entrenador de pádel. Lleva las clases individuales y de grupo, y los grupos de adultos vacacionales."
+      "daniel-gonzalez": "Head coach de la academia. Trabaja las estrategias de partido, los patrones de juego y la preparación para torneos.",
+      "laurent-dairiam": "Head coach de la academia. Se centra en las variantes de efectos, la táctica y la lectura del rival.",
+      "javier-anibal": "Preparador físico de la academia. Adapta la preparación física a las necesidades y al momento de cada jugador.",
+      "alberto-ottchota": "Head coach de pádel. Lleva las clases individuales y de grupo, y los grupos de adultos vacacionales."
     }
   },
   "reservarPage": {
@@ -427,9 +425,9 @@
     ]
   },
   "hoteles": {
-    "eyebrow": "Servicio en hoteles",
+    "eyebrow": "Luxury Tennis",
     "title": "Entrena donde estés.",
-    "body": "Con nuestro servicio en hoteles seguimos tu entrenamiento también en vacaciones. Un entrenador de la academia acude a la pista de tu hotel a la hora acordada. Es un servicio exclusivo con coste adicional.",
+    "body": "Luxury Tennis es nuestro servicio en hoteles: seguimos tu entrenamiento también en vacaciones. Un entrenador de la academia acude a la pista de tu hotel a la hora acordada. Es un servicio exclusivo con coste adicional.",
     "partnersLabel": "Hoteles colaboradores",
     "stepsTitle": "Cómo funciona",
     "steps": [
@@ -437,7 +435,9 @@
       { "title": "Confirmamos pista y entrenador", "body": "Comprobamos la disponibilidad de la pista del hotel y asignamos entrenador." },
       { "title": "Entrenas sin desplazarte", "body": "El entrenador acude a tu hotel a la hora acordada." }
     ],
-    "formTitle": "Solicita información"
+    "ctaTitle": "¿Te alojas en un hotel de la zona?",
+    "ctaBody": "Escríbenos con el hotel, las fechas y el nivel de los jugadores, y te preparamos una propuesta.",
+    "cta": "Escribir a la academia"
   },
   "contacto": {
     "eyebrow": "Contacto",

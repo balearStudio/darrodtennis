@@ -2,7 +2,7 @@
  * Regenerates the Open Graph social cards in `public/images/og-{es,en}.jpg`.
  *
  * They are 1200x630 JPEGs (~100 KB — small enough that WhatsApp renders the
- * preview) built by drawing the site's own type over `public/images/aerial.jpg`
+ * preview) built by drawing the site's own type over `public/images/club-courts.jpg`
  * in headless Chrome. The headline copy comes straight from `messages/*.json`
  * (`hero.titleLine1` + `hero.titleAccent`), so re-run this after changing the
  * hero wording, the eyebrow, or the photo:
@@ -21,7 +21,7 @@ import path from "node:path";
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const photo =
   "data:image/jpeg;base64," +
-  readFileSync(path.join(repo, "public/images/aerial.jpg")).toString("base64");
+  readFileSync(path.join(repo, "public/images/club-courts.jpg")).toString("base64");
 
 const messages = Object.fromEntries(
   ["es", "en"].map((l) => [

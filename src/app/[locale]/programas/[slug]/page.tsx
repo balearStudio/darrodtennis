@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { pageMetadata } from "@/lib/metadata";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
-import { PROGRAMS, programBySlug, COACHES } from "@/lib/content";
+import { PROGRAMS, programBySlug } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
 import { PhotoFrame } from "@/components/PhotoFrame";
 import { Eyebrow } from "@/components/Eyebrow";
@@ -41,7 +41,6 @@ export default async function ProgramDetailPage({ params }: Props) {
 
   const tp = await getTranslations("prog");
   const t = await getTranslations("programasPage");
-  const tteam = await getTranslations("team.coaches");
   const tnav = await getTranslations("nav");
   const tmeta = await getTranslations("meta");
 
@@ -55,8 +54,6 @@ export default async function ProgramDetailPage({ params }: Props) {
     intro: string;
     works: string[];
   };
-
-  const coaches = COACHES.filter((c) => c.programSlug === program.slug);
 
   return (
     <>
@@ -122,24 +119,6 @@ export default async function ProgramDetailPage({ params }: Props) {
             </ul>
           </Reveal>
         </div>
-
-        {coaches.length > 0 ? (
-          <Reveal className="mt-16 flex flex-wrap gap-x-8 gap-y-3">
-            <span className="text-label text-muted">{t("coachesLabel")}</span>
-            {coaches.map((c) => {
-              const info = tteam.raw(c.slug) as { name: string };
-              return (
-                <Link
-                  key={c.slug}
-                  href={`/equipo/${c.slug}`}
-                  className="border-b border-ink-900/30 pb-1 text-[15px] transition-colors hover:border-clay"
-                >
-                  {info.name}
-                </Link>
-              );
-            })}
-          </Reveal>
-        ) : null}
 
         <Reveal className="mt-14">
           <Cta href="/reservar" variant="primary">

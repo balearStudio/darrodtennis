@@ -7,7 +7,7 @@ import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { Eyebrow } from "@/components/Eyebrow";
 import { PartnerWall } from "@/components/PartnerWall";
-import { EnquiryForm } from "@/components/forms/EnquiryForm";
+import { CONTACT } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -55,10 +55,14 @@ export default async function HotelesPage({ params }: Props) {
         </Reveal>
 
         <Reveal className="mt-16 border-t border-ink-900/15 pt-14">
-          <h2 className="text-h2 max-w-[18ch]">{t("formTitle")}</h2>
-          <div className="mt-10">
-            <EnquiryForm tone="cream" />
-          </div>
+          <h2 className="text-h2 max-w-[18ch]">{t("ctaTitle")}</h2>
+          <p className="mt-5 max-w-[52ch] text-body text-slate">{t("ctaBody")}</p>
+          <a
+            href={`mailto:${CONTACT.email}?subject=${encodeURIComponent("Luxury Tennis")}`}
+            className="mt-10 inline-flex items-center gap-3 rounded-[2px] border border-clay bg-clay px-7 py-4 text-sm tracking-[0.02em] text-cream transition-colors hover:bg-clay-hover"
+          >
+            {t("cta")}
+          </a>
         </Reveal>
       </section>
     </>

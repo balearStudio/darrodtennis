@@ -14,7 +14,7 @@ export async function Hero() {
       {/* Aerial still stays the poster / LCP; the loop fades in over it. */}
       <div className="absolute inset-0">
         <Img
-          src="/images/aerial.jpg"
+          src="/images/club-courts.jpg"
           alt={tmeta("ogAlt")}
           fill
           priority
@@ -26,7 +26,7 @@ export async function Hero() {
           }}
         />
         <HeroVideo
-          src="/videos/club-tennis.mp4"
+          src="/videos/club.mp4"
           style={{
             objectPosition: "52% 46%",
             filter: "saturate(0.82) contrast(1.06) brightness(0.88)",

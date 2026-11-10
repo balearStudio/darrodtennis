@@ -27,7 +27,7 @@ export function businessSchema(locale: Locale, description: string) {
     description,
     url: localizedUrl(locale, "/"),
     logo: `${SITE_URL}/darrod-logo.png`,
-    image: `${SITE_URL}/images/aerial.jpg`,
+    image: `${SITE_URL}/images/club-courts.jpg`,
     email: CONTACT.email,
     ...(CONTACT.phone ? { telephone: CONTACT.phone.replace(/\s+/g, "") } : {}),
     sameAs: [CONTACT.instagram],

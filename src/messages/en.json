@@ -29,7 +29,7 @@
     },
     "equipo": {
       "title": "Tennis and padel coaches in Maspalomas",
-      "description": "Meet the Darrod Tennis Academy team: five certified tennis and padel coaches with international experience and one shared methodology, in Maspalomas."
+      "description": "Meet the Darrod Tennis Academy team: certified tennis and padel coaches with international experience and one shared methodology, in Maspalomas."
     },
     "reservar": {
       "title": "Book a tennis lesson in Maspalomas",
@@ -44,7 +44,7 @@
       "description": "Gran Canaria hosts more than nine international tennis tournaments each season. We support our players across the local, national and international calendar."
     },
     "hoteles": {
-      "title": "Tennis lessons at your hotel in Maspalomas",
+      "title": "Luxury Tennis: tennis lessons at your hotel",
       "description": "Tennis lessons on holiday in Maspalomas: an academy coach comes to your hotel court at the agreed time. An exclusive service for an additional fee."
     },
     "contacto": {
@@ -92,20 +92,20 @@
   "hero": {
     "eyebrow": "Tennis and padel academy in Maspalomas",
     "titleLine1": "Tennis 365 days a year,",
-    "titleAccent": "in the best climate in the world.",
+    "titleAccent": "with the best weather in the world.",
     "body": "A tennis and padel academy for every age and level. Our own methodology, coaches with international experience, and personal attention in every session.",
     "cta1": "Book a lesson",
     "cta2": "See programmes",
     "stats": [
-      { "value": "4", "label": "Courts · clay and hard" },
-      { "value": "5", "label": "Certified coaches" },
-      { "value": "9+", "label": "International tournaments" },
-      { "value": "1–4", "label": "Players per lesson" }
+      { "value": "365", "label": "Days a year" },
+      { "value": "8am–9pm", "label": "Lessons all day" },
+      { "value": "1–4", "label": "Players per lesson" },
+      { "value": "9+", "label": "International tournaments" }
     ]
   },
   "phil": {
     "eyebrow": "Our philosophy",
-    "title": "One methodology, five coaches, a plan for every player.",
+    "title": "One methodology, one team, a plan for every player.",
     "body": "Every Darrod coach works to the same methodology, designed exclusively by the academy. Players train with several coaches during their development: each professional brings something personal to the process and enriches the player's game.",
     "principles": [
       {
@@ -186,10 +186,10 @@
     "portraitPending": "Portrait pending",
     "coaches": {
       "daniel-rodriguez": { "name": "Daniel Rodríguez", "role": "Director · Head Coach" },
-      "daniel-gonzalez": { "name": "Daniel González", "role": "Coach · Competition" },
-      "laurent-dairiam": { "name": "Laurent Dairiam", "role": "Coach · Tennis Pro" },
-      "javier-anibal": { "name": "Javier Aníbal", "role": "Coach · Junior" },
-      "alberto-ottchota": { "name": "Alberto Ottchota", "role": "Coach · Padel" }
+      "daniel-gonzalez": { "name": "Daniel González", "role": "Head Coach" },
+      "laurent-dairiam": { "name": "Laurent Dairiam", "role": "Head Coach" },
+      "javier-anibal": { "name": "Javier Aníbal", "role": "Physical trainer" },
+      "alberto-ottchota": { "name": "Alberto Ottchota", "role": "Head Coach · Padel" }
     }
   },
   "book": {
@@ -232,7 +232,7 @@
       "closedDay": "The academy is closed on this day.",
       "morning": "Morning",
       "afternoon": "Afternoon",
-      "multiHint": "Pick as many times as you like — each one is added to your request. You can combine several days.",
+      "multiHint": "Pick the times you would like — each one is added to your request, and you can combine several days. Times are a preference: we adapt to them where we can and confirm the time by email.",
       "selectedTitle": "Requested sessions",
       "selectedEmpty": "No sessions added yet.",
       "removeSession": "Remove {day} at {time}",
@@ -283,7 +283,7 @@
     "colServices": "Services",
     "colContact": "Contact",
     "linkPhilosophy": "Philosophy",
-    "linkHotels": "In-hotel service",
+    "linkHotels": "Luxury Tennis",
     "linkStays": "Stays and camps",
     "collabLabel": "In partnership with",
     "rights": "© 2026 Darrod Tennis Academy",
@@ -334,7 +334,6 @@
     "cta": "Book a lesson",
     "detailBack": "All programmes",
     "worksOnLabel": "What we work on",
-    "coachesLabel": "Coaches",
     "formatLabel": "Format",
     "items": {
       "junior": {
@@ -392,15 +391,14 @@
         "body": "The programmes aim to improve the game in a demanding training environment, also building independence and handling pressure."
       }
     ],
-    "coachProgramLabel": "Programme",
     "coachBackLabel": "The whole team",
     "coachCta": "Book a lesson",
     "bios": {
       "daniel-rodriguez": "Director of the academy and owner of the Darrod methodology. He coordinates the coaching team and the follow-up of competition players.",
-      "daniel-gonzalez": "Coach in the competition area. He works on match strategy, game patterns and tournament preparation.",
-      "laurent-dairiam": "Coach on the Tennis Pro programme. He focuses on spin variations, tactics and reading the opponent.",
-      "javier-anibal": "Coach on the Junior programme. He builds technique from footwork up and guides the first steps into competition.",
-      "alberto-ottchota": "Padel coach. He runs individual and group lessons, and the holiday adult groups."
+      "daniel-gonzalez": "Head coach at the academy. He works on match strategy, game patterns and tournament preparation.",
+      "laurent-dairiam": "Head coach at the academy. He focuses on spin variations, tactics and reading the opponent.",
+      "javier-anibal": "Physical trainer at the academy. He adapts physical preparation to each player's needs and stage.",
+      "alberto-ottchota": "Head padel coach. He runs individual and group lessons, and the holiday adult groups."
     }
   },
   "reservarPage": {
@@ -427,9 +425,9 @@
     ]
   },
   "hoteles": {
-    "eyebrow": "In-hotel service",
+    "eyebrow": "Luxury Tennis",
     "title": "Train wherever you are.",
-    "body": "With our in-hotel service we keep your training going on holiday too. An academy coach comes to your hotel court at the agreed time. It is an exclusive service for an additional fee.",
+    "body": "Luxury Tennis is our in-hotel service: we keep your training going on holiday too. An academy coach comes to your hotel court at the agreed time. It is an exclusive service for an additional fee.",
     "partnersLabel": "Partner hotels",
     "stepsTitle": "How it works",
     "steps": [
@@ -437,7 +435,9 @@
       { "title": "We confirm court and coach", "body": "We check the hotel court's availability and assign a coach." },
       { "title": "Train without travelling", "body": "The coach comes to your hotel at the agreed time." }
     ],
-    "formTitle": "Request information"
+    "ctaTitle": "Staying at a hotel nearby?",
+    "ctaBody": "Write to us with your hotel, dates and the players' level, and we will put a proposal together.",
+    "cta": "Email the academy"
   },
   "contacto": {
     "eyebrow": "Contact",

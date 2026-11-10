@@ -28,30 +28,24 @@ export const programBySlug = (slug: string) =>
 export type Coach = {
   slug: string;
   image: string;
-  /** Program the coach mainly works on, for the cross-link on their page. */
-  programSlug?: string;
 };
 
 export const COACHES: Coach[] = [
   {
     slug: "daniel-rodriguez",
     image: "/images/coach-daniel-rodriguez.jpg",
-    programSlug: "coaching-asesoramiento",
   },
   {
     slug: "daniel-gonzalez",
     image: "/images/coach-daniel-gonzalez.jpg",
-    programSlug: "tennis-pro",
   },
   {
     slug: "laurent-dairiam",
     image: "/images/coach-laurent-dairiam.jpg",
-    programSlug: "tennis-pro",
   },
   {
     slug: "javier-anibal",
     image: "/images/coach-javier-anibal.jpg",
-    programSlug: "junior-tennis",
   },
   {
     slug: "alberto-ottchota",
