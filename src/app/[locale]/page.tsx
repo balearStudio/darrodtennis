@@ -9,6 +9,7 @@ import { Filosofia } from "@/components/home/Filosofia";
 import { Programas } from "@/components/home/Programas";
 import { Jugadores } from "@/components/home/Jugadores";
 import { Equipo } from "@/components/home/Equipo";
+import { LuxuryTennis } from "@/components/home/LuxuryTennis";
 import { Reservar } from "@/components/home/Reservar";
 
 type Props = { params: Promise<{ locale: Locale }> };
@@ -32,6 +33,7 @@ export default async function HomePage({ params }: Props) {
       <Programas />
       <Jugadores />
       <Equipo />
+      <LuxuryTennis />
       <Reservar />
     </>
   );

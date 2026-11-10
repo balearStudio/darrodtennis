@@ -232,7 +232,9 @@
       "closedDay": "La academia no abre este día.",
       "morning": "Mañana",
       "afternoon": "Tarde",
-      "multiHint": "Elige las horas que prefieras: cada una se añade a tu solicitud y puedes combinar varios días. El horario es orientativo: nos adaptamos a tu preferencia en lo posible y te confirmamos la hora por email.",
+      "multiHint": "Elige las horas que prefieras: cada una se añade a tu solicitud y puedes combinar varios días.",
+      "timeNoteTitle": "El horario es orientativo.",
+      "timeNoteBody": "Indícanos las horas que mejor te vienen: nos adaptamos en lo posible y te confirmamos la hora final por email.",
       "selectedTitle": "Sesiones solicitadas",
       "selectedEmpty": "Todavía no has añadido ninguna sesión.",
       "removeSession": "Quitar {day} a las {time}",
@@ -425,6 +427,12 @@
       { "name": "ITF World Tour W25", "category": "Femenino profesional" },
       { "name": "ITF Seniors Tour", "category": "Veteranos" }
     ]
+  },
+  "luxuryHome": {
+    "eyebrow": "Luxury Tennis",
+    "title": "Tu entrenador, en la pista de tu hotel.",
+    "body": "Seguimos tu entrenamiento también en vacaciones: un entrenador de la academia acude a la pista de tu hotel a la hora acordada. Un servicio exclusivo, con coste adicional.",
+    "cta": "Descubre Luxury Tennis"
   },
   "hoteles": {
     "eyebrow": "Luxury Tennis",

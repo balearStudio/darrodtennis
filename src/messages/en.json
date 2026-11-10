@@ -232,7 +232,9 @@
       "closedDay": "The academy is closed on this day.",
       "morning": "Morning",
       "afternoon": "Afternoon",
-      "multiHint": "Pick the times you would like — each one is added to your request, and you can combine several days. Times are a preference: we adapt to them where we can and confirm the time by email.",
+      "multiHint": "Pick the times you would like — each one is added to your request, and you can combine several days.",
+      "timeNoteTitle": "Times are approximate.",
+      "timeNoteBody": "Tell us the times that suit you best: we adapt where we can and confirm the final time by email.",
       "selectedTitle": "Requested sessions",
       "selectedEmpty": "No sessions added yet.",
       "removeSession": "Remove {day} at {time}",
@@ -425,6 +427,12 @@
       { "name": "ITF World Tour W25", "category": "Women's professional" },
       { "name": "ITF Seniors Tour", "category": "Seniors" }
     ]
+  },
+  "luxuryHome": {
+    "eyebrow": "Luxury Tennis",
+    "title": "Your coach, on your hotel's court.",
+    "body": "Keep training on holiday too: an academy coach comes to your hotel court at the agreed time. An exclusive service, for an additional fee.",
+    "cta": "Discover Luxury Tennis"
   },
   "hoteles": {
     "eyebrow": "Luxury Tennis",

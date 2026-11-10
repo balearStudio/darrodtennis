@@ -332,8 +332,13 @@ export function BookingMock({ compact = false }: Props) {
               <legend className={legendCls}>
                 {t("step3Title")}
               </legend>
-              <p className="mb-5 mt-2 max-w-[52ch] text-[13px] leading-[1.6] text-cream/50">
+              <p className="mt-2 max-w-[52ch] text-[13px] leading-[1.6] text-cream/50">
                 {t("multiHint")}
+              </p>
+              {/* Client asked for this to stand out: times are a preference. */}
+              <p className="mb-6 mt-4 max-w-[52ch] border-l-2 border-clay bg-clay/10 px-4 py-3 text-[13.5px] leading-[1.6] text-cream/80">
+                <strong className="font-semibold text-clay-hover">{t("timeNoteTitle")}</strong>{" "}
+                {t("timeNoteBody")}
               </p>
 
               <div
