@@ -28,14 +28,14 @@ const SITE_URL = (
 /** Old path → new path, both without the leading slash. */
 const LEGACY = {
   "promocion/": "es/",
-  "academia/": "es/",
+  "academia/": "es/escuela/",
   "metodologia/": "es/programas/",
   "programas/": "es/programas/",
   "contacto/": "es/contacto/",
   "aviso-legal/": "es/aviso-legal/",
   "politica-de-privacidad/": "es/privacidad/",
   "en/home/": "en/",
-  "en/academy/": "en/",
+  "en/academy/": "en/escuela/",
   "en/methodology/": "en/programas/",
   "en/programs/": "en/programas/",
   "en/contact/": "en/contacto/",

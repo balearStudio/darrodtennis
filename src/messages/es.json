@@ -12,7 +12,7 @@
     "instagramUrl": "https://www.instagram.com/darrodtennisacademy/",
     "whatsapp": "WhatsApp",
     "phone": "Teléfono",
-    "location": "Maspalomas, Gran Canaria"
+    "location": "Parque Sur, Maspalomas (Gran Canaria)"
   },
   "meta": {
     "siteName": "Darrod Tennis Academy",
@@ -42,6 +42,10 @@
     "torneos": {
       "title": "Torneos de tenis en Gran Canaria",
       "description": "Gran Canaria acoge más de nueve torneos internacionales de tenis cada temporada. Acompañamos a nuestros jugadores en el calendario local, nacional e internacional."
+    },
+    "escuela": {
+      "title": "Escuela de tenis en Maspalomas (Parque Sur)",
+      "description": "Escuela de tenis en Parque Sur, Maspalomas: grupos por edad y nivel de lunes a sábado, preparación física, competición, adultos y campus. Temporada 2026/27."
     },
     "hoteles": {
       "title": "Luxury Tennis: clases de tenis en tu hotel",
@@ -84,6 +88,7 @@
   "nav": {
     "academy": "Academia",
     "programs": "Programas",
+    "school": "Escuela",
     "team": "Equipo",
     "tournaments": "Torneos",
     "contact": "Contacto",
@@ -425,6 +430,89 @@
       { "name": "ITF World Tour W25", "category": "Femenino profesional" },
       { "name": "ITF Seniors Tour", "category": "Veteranos" }
     ]
+  },
+  "escuela": {
+    "eyebrow": "Escuela de tenis · 26/27",
+    "title": "Es tu momento.",
+    "intro": "La escuela de tenis de Darrod Tennis Academy en Parque Sur, Maspalomas. Grupos por edad y nivel para aprender, entrenar y competir, con la misma metodología que el resto de la academia.",
+    "facts": [
+      {
+        "label": "Horario",
+        "value": "Lunes a viernes, 16:30–20:00\nSábados, 10:00–13:00"
+      },
+      {
+        "label": "Dónde",
+        "value": "Parque Sur\nMaspalomas, Gran Canaria"
+      },
+      {
+        "label": "Información e inscripciones",
+        "value": "WhatsApp +34 656 604 577\n@darrodtennisacademy"
+      }
+    ],
+    "imageAlt": "Entrenador de Darrod Tennis Academy dirigiendo un ejercicio de preparación física con niños",
+    "offer": {
+      "eyebrow": "Qué ofrecemos",
+      "title": "Todo para crecer dentro y fuera de la pista.",
+      "items": [
+        {
+          "title": "Escuela de tenis",
+          "body": "Grupos por edad y nivel para aprender la técnica y disfrutar del tenis desde pequeños."
+        },
+        {
+          "title": "Preparación física",
+          "body": "Trabajo físico adaptado a la edad y al momento de cada jugador, con nuestro preparador físico."
+        },
+        {
+          "title": "Competición",
+          "body": "Entrenamiento y acompañamiento para los jugadores que quieren competir en torneos."
+        },
+        {
+          "title": "Adultos",
+          "body": "Grupos y clases para adultos, sea cual sea tu nivel."
+        },
+        {
+          "title": "Campus",
+          "body": "Campus de tenis en periodos de vacaciones."
+        }
+      ]
+    },
+    "licences": {
+      "eyebrow": "Licencias federativas",
+      "title": "Temporada 2026/27.",
+      "intro": "Cómo renovar o sacar la licencia de la Federación Canaria de Tenis para esta temporada.",
+      "renewTitle": "Renovación",
+      "renewBody": "Si ya tenías licencia la temporada pasada, la renovamos nosotros desde el club. El importe se añade a la mensualidad de octubre.",
+      "newTitle": "Licencia nueva",
+      "newBody": "Las licencias nuevas se solicitan directamente en el portal de la Federación Canaria de Tenis.",
+      "clubLabel": "Club al que perteneces (en la solicitud)",
+      "clubName": "C.D. Darrod Tennis Club",
+      "newCta": "Solicitar licencia en la federación",
+      "feesTitle": "Precio de la licencia",
+      "fees": [
+        {
+          "group": "Sub-8",
+          "ages": "Hasta 8 años",
+          "price": "20 €"
+        },
+        {
+          "group": "Juvenil",
+          "ages": "De 8 a 18 años",
+          "price": "39 €"
+        },
+        {
+          "group": "Adultos",
+          "ages": "Mayores de 18 años",
+          "price": "55 €"
+        }
+      ],
+      "feesNote": "Importes de la licencia federativa para la temporada 2026/27. No incluyen las clases."
+    },
+    "cta": {
+      "title": "¿Dudas o quieres apuntarte?",
+      "body": "Escríbenos por WhatsApp y te ayudamos, o usa el formulario de contacto. También puedes escribirnos a {email}.",
+      "whatsapp": "Escribir por WhatsApp",
+      "contact": "Formulario de contacto"
+    }
   },
   "luxuryHome": {
     "eyebrow": "Luxury Tennis",

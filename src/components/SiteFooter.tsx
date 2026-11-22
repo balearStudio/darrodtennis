@@ -14,6 +14,7 @@ export async function SiteFooter() {
       title: t("colAcademy"),
       links: [
         { label: tn("programs"), href: "/programas" },
+        { label: tn("school"), href: "/escuela" },
         { label: tn("team"), href: "/equipo" },
         { label: t("linkPhilosophy"), href: "/#filosofia" },
         { label: tn("tournaments"), href: "/torneos" },

@@ -15,8 +15,9 @@ export const CONTACT = {
    *   phone    — display string, e.g. "+34 928 00 00 00"
    *   whatsapp — the same number, digits only with country code, e.g. "34928000000"
    */
-  phone: "",
-  whatsapp: "",
+  // Mobile / WhatsApp from the client's 2026/27 school poster.
+  phone: "+34 656 604 577",
+  whatsapp: "34656604577",
   instagram: "https://www.instagram.com/darrodtennisacademy/",
   locality: "Maspalomas",
   region: "Las Palmas",
@@ -33,6 +34,10 @@ export const LEGAL = {
   nif: "B01712488",
   address: "Sun Club Tennis Playa del Inglés, Avda. de Gran Canaria 118, 35100 Maspalomas, Las Palmas",
 };
+
+/** Federation portal where new players request their licence (2026/27). */
+export const FEDERATION_LICENCE_URL =
+  "https://portal.federacioncanariadetenis.com/solicitar_licencia/solicitud_licencia_nueva.php";
 
 /** The studio that designed and built the site, credited in the footer. */
 export const STUDIO = {
@@ -54,6 +59,7 @@ export const whatsappHref = CONTACT.whatsapp
 export const NAV_LINKS = [
   { key: "academy", href: "/#filosofia" },
   { key: "programs", href: "/programas" },
+  { key: "school", href: "/escuela" },
   { key: "team", href: "/equipo" },
   { key: "tournaments", href: "/torneos" },
   { key: "contact", href: "/contacto" },

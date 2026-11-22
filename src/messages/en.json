@@ -12,7 +12,7 @@
     "instagramUrl": "https://www.instagram.com/darrodtennisacademy/",
     "whatsapp": "WhatsApp",
     "phone": "Phone",
-    "location": "Maspalomas, Gran Canaria"
+    "location": "Parque Sur, Maspalomas (Gran Canaria)"
   },
   "meta": {
     "siteName": "Darrod Tennis Academy",
@@ -42,6 +42,10 @@
     "torneos": {
       "title": "Tennis tournaments in Gran Canaria",
       "description": "Gran Canaria hosts more than nine international tennis tournaments each season. We support our players across the local, national and international calendar."
+    },
+    "escuela": {
+      "title": "Tennis school in Maspalomas (Parque Sur)",
+      "description": "Tennis school at Parque Sur, Maspalomas: groups by age and level from Monday to Saturday, physical training, competition, adults and camps. Season 2026/27."
     },
     "hoteles": {
       "title": "Luxury Tennis: tennis lessons at your hotel",
@@ -84,6 +88,7 @@
   "nav": {
     "academy": "Academy",
     "programs": "Programmes",
+    "school": "School",
     "team": "Team",
     "tournaments": "Tournaments",
     "contact": "Contact",
@@ -425,6 +430,89 @@
       { "name": "ITF World Tour W25", "category": "Women's professional" },
       { "name": "ITF Seniors Tour", "category": "Seniors" }
     ]
+  },
+  "escuela": {
+    "eyebrow": "Tennis school · 26/27",
+    "title": "It's your time.",
+    "intro": "Darrod Tennis Academy's tennis school at Parque Sur, Maspalomas. Groups by age and level to learn, train and compete, with the same methodology as the rest of the academy.",
+    "facts": [
+      {
+        "label": "Schedule",
+        "value": "Monday to Friday, 4:30–8:00 pm\nSaturdays, 10:00 am–1:00 pm"
+      },
+      {
+        "label": "Where",
+        "value": "Parque Sur\nMaspalomas, Gran Canaria"
+      },
+      {
+        "label": "Information and sign-up",
+        "value": "WhatsApp +34 656 604 577\n@darrodtennisacademy"
+      }
+    ],
+    "imageAlt": "A Darrod Tennis Academy coach leading a fitness drill with children",
+    "offer": {
+      "eyebrow": "What we offer",
+      "title": "Everything to grow on and off the court.",
+      "items": [
+        {
+          "title": "Tennis school",
+          "body": "Groups by age and level to learn technique and enjoy tennis from an early age."
+        },
+        {
+          "title": "Physical training",
+          "body": "Fitness work adapted to each player's age and stage, with our physical trainer."
+        },
+        {
+          "title": "Competition",
+          "body": "Training and support for players who want to compete in tournaments."
+        },
+        {
+          "title": "Adults",
+          "body": "Groups and lessons for adults, whatever your level."
+        },
+        {
+          "title": "Camps",
+          "body": "Tennis camps during holiday periods."
+        }
+      ]
+    },
+    "licences": {
+      "eyebrow": "Federation licences",
+      "title": "Season 2026/27.",
+      "intro": "How to renew or get your Canary Islands Tennis Federation licence for this season.",
+      "renewTitle": "Renewal",
+      "renewBody": "If you had a licence last season, we renew it for you from the club. The fee is added to your October monthly payment.",
+      "newTitle": "New licence",
+      "newBody": "New licences are requested directly on the Canary Islands Tennis Federation portal.",
+      "clubLabel": "Your club (on the application)",
+      "clubName": "C.D. Darrod Tennis Club",
+      "newCta": "Request a licence from the federation",
+      "feesTitle": "Licence fee",
+      "fees": [
+        {
+          "group": "Under 8",
+          "ages": "Up to 8 years old",
+          "price": "€20"
+        },
+        {
+          "group": "Junior",
+          "ages": "8 to 18 years old",
+          "price": "€39"
+        },
+        {
+          "group": "Adults",
+          "ages": "Over 18",
+          "price": "€55"
+        }
+      ],
+      "feesNote": "Federation licence fees for the 2026/27 season. Lessons are not included."
+    },
+    "cta": {
+      "title": "Questions, or ready to join?",
+      "body": "Message us on WhatsApp and we'll help, or use the contact form. You can also email us at {email}.",
+      "whatsapp": "Message us on WhatsApp",
+      "contact": "Contact form"
+    }
   },
   "luxuryHome": {
     "eyebrow": "Luxury Tennis",

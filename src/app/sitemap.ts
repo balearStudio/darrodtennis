@@ -6,6 +6,7 @@ import { PROGRAMS, COACHES } from "@/lib/content";
 const PATHS = [
   "/",
   "/programas",
+  "/escuela",
   "/equipo",
   "/reservar",
   "/torneos",
